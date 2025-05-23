@@ -310,14 +310,14 @@ $cotizacion = new Cotizacion()->getById($_GET['id']);
                                 <div class="row align-items-center g-3 mb-3">
                                     ${item.img == null ? " "  : 
                                     `
-                                    <div class="col-md-2">
+                                    <div class="col-2">
                                         <div style="position: relative; width: 100%; padding-bottom: 100%;">
                                             <img src="../${item.img}" class="img-fluid rounded position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover;" alt="${item.description}">
                                         </div>
                                     </div>
                                     `
                                     }
-                                    <div class=" ${item.img == null ? 'col-md-6' : 'col-md-4'}">
+                                    <div class=" ${item.img == null ? 'col-12' : 'col-10'}">
                                         <h6 class="card-title mb-1 fw-bold text-truncate">${item.description}</h6>
                                         <p class="card-text text-muted small mb-1">${item.description}</p>
                                         <span class="badge bg-light text-dark">ID: ${item.id}</span>
