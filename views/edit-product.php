@@ -57,7 +57,9 @@ $producto = new Producto()->getById($_GET['id']);
                         <li class="nav-item">
                             <a class="nav-link" href="prices.php">Cotizaciones</a>
                         </li>
-                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="tools.php">Herramientas</a>
+                        </li>
                         <li>
                             <a href="../bd/logout.php" class="nav-link logout-icon">
                                 <i class="fas fa-sign-out-alt"></i></a>

@@ -51,6 +51,9 @@ $cotizaciones = CotizacionController::listar();
                         <li class="nav-item">
                             <a class="nav-link active" href="prices.php">Cotizaciones</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tools.php">Herramientas</a>
+                        </li>
                         
                         <li>
                             <a href="../bd/logout.php" class="nav-link logout-icon">

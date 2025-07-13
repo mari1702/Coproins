@@ -41,7 +41,7 @@ class ProductoController {
     
             // Manejo de la imagen
             if (!empty($_FILES['image']['name'])) {
-                $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/uploads/';
+                $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/uploads/products/';
                 $allowedTypes = ['image/jpeg', 'image/png', 'image/webp'];
                 $maxSize = 2 * 1024 * 1024; // 2MB
     
@@ -77,7 +77,7 @@ class ProductoController {
                     // }
                     
                     if (move_uploaded_file($file['tmp_name'], $targetPath)) {
-                        $imgruta = 'uploads/' . $fileName;
+                        $imgruta = 'uploads/products/' . $fileName;
                     } else {
                         $error = 'Error al guardar el archivo en el servidor ';
                     }
@@ -154,7 +154,7 @@ class ProductoController {
 
         // Manejo de la imagen
         if (!empty($_FILES['image']['name'])) {
-            $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/uploads/';
+            $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/uploads/products/';
             $allowedTypes = ['image/jpeg', 'image/png', 'image/webp'];
             $maxSize = 2 * 1024 * 1024; // 2MB
 
@@ -181,7 +181,7 @@ class ProductoController {
                 $targetPath = $uploadDir . $fileName;
                 
                 if (move_uploaded_file($file['tmp_name'], $targetPath)) {
-                    $imgruta = 'uploads/' . $fileName;
+                    $imgruta = 'uploads/products/' . $fileName;
                     ProductoController::DeleteImg($producto->getImgRuta());
                 } else {
                     $error = 'Error al guardar el archivo en el servidor ' . $targetPath;
