@@ -88,6 +88,14 @@ class Departamento {
         return $results;
     }
 
+    public function isDeleteable(){
+        if ($this->getHerramientas()) {
+            return true;
+        }else{
+            return false;
+        }
+    }
+    
     // Setters
     public function setNombre($nombre) {
         $this->nombre = $nombre;

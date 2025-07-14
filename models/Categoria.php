@@ -88,6 +88,13 @@ class Categoria {
         return $results;
     }
 
+    public function isDeleteable(){
+        if ($this->getProductos()) {
+            return true;
+        }else{
+            return false;
+        }
+    }
 
     // Setters
     public function setNombre($nombre) {

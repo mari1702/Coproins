@@ -68,6 +68,14 @@ class Marca {
         return false;
     }
 
+    public function isDeleteable(){
+        if ($this->getHerramientas()) {
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     // Getters
     public function getId() {
         return $this->id;

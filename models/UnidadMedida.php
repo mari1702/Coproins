@@ -77,6 +77,7 @@ class UnidadMedida {
         return $this->nombre;
     }
 
+
     public function getProductos() {
         $db = Database::getConnection();
         $stmt = $db->prepare("SELECT * FROM producto WHERE um_um_id = ?");
@@ -88,6 +89,13 @@ class UnidadMedida {
         return $results;
     }
 
+    public function isDeleteable(){
+        if ($this->getProductos()) {
+            return true;
+        }else{
+            return false;
+        }
+    }
 
     // Setters
     public function setNombre($nombre) {

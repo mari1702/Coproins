@@ -1,5 +1,6 @@
 <?php
 include "../components/navbar.php";
+include "../components/modalShowObjects.php";
 
 require_once "../controllers/DepartamentoController.php";
 require_once "../controllers/MarcaController.php";
@@ -84,7 +85,7 @@ $herramientas = HerramientaController::listar();
                                     </button>
 
                                     <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal"
-                                        data-bs-target="#ShowDepartments">
+                                        data-bs-target="#show_departamento">
                                         <i class="fa fa-eye"></i>
                                     </button>
                                 </div>
@@ -115,7 +116,7 @@ $herramientas = HerramientaController::listar();
                                     </button>
 
                                     <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal"
-                                        data-bs-target="#ShowBrands">
+                                        data-bs-target="#show_marca">
                                         <i class="fa fa-eye"></i>
                                     </button>
                                 </div>     
@@ -353,138 +354,10 @@ $herramientas = HerramientaController::listar();
     </section>
 
     <section>
-
-        <div class="modal fade" id="ShowDepartments" tabindex="-1" aria-labelledby="modalShowDepartments"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header bg-primary text-white">
-                        <h5 class="modal-title" id="modalShowDepartments">Departamentos</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                    <table class="table" id="categoriesTable">
-                            <thead class="table-primary">
-                                <tr>
-                                    <th scope="col">ID</th>
-                                    <th scope='col'>Nombre</th>
-                                    <th scope="col" class="text-center">Acciones</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-
-
-                                <?php foreach($departamentos as $departamento): ?>
-
-                                <tr>
-                                    <th scope="row"><?= $departamento->getId(); ?></th>
-                                    <td>
-                                        <span id="label-name-<?= $departamento->getId(); ?>"> <?= $departamento->getNombre(); ?></span>
-                                        <input type="text" class="form-control d-none" id="input-name-<?= $departamento->getId(); ?>" name="name"
-                                            value="<?= $departamento->getNombre(); ?>" required>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex justify-content-center gap-2">
-                                            <!-- Editar -->
-                                            <button class="btn btn-primary btn-sm" id="<?= $departamento->getId(); ?>" type="button" onclick="toggleEdit(this)">
-                                                <i class="fas fa-edit"></i>
-                                            </button>
-
-                                            <!-- Guardar -->
-
-                                            <button class="btn btn-success btn-sm d-none" id="<?= $departamento->getId(); ?>"  data-table="departamento" type="button" onclick="saveEdit(this)">
-                                                <i class="fas fa-save"></i>
-                                            </button>
-
-                                            
-
-                                            <!-- Eliminar -->
-                                            <form method="POST" action="../actions/departamento_borrar.php" class="d-inline">
-                                                <input type="hidden" name="id" value="<?= $departamento->getId(); ?>">
-                                                <button type="button" class="btn btn-danger btn-sm" title="Eliminar"
-                                                    aria-label="Eliminar" onclick="confirmarEliminacion(this)"
-                                                    <?= ($departamento->getHerramientas()) ?  "disabled" : "" ?>>
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </form>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <?php endforeach ?>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="ShowBrands" tabindex="-1" aria-labelledby="modalShowBrands"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header bg-primary text-white">
-                        <h5 class="modal-title" id="modalShowBrands">Departamentos</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                    <table class="table" id="brandsTable">
-                            <thead class="table-primary">
-                                <tr>
-                                    <th scope="col">ID</th>
-                                    <th scope='col'>Nombre</th>
-                                    <th scope="col" class="text-center">Acciones</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-
-
-                                <?php foreach($marcas as $marca): ?>
-
-                                <tr>
-                                    <th scope="row"><?= $marca->getId(); ?></th>
-                                    <td>
-                                        <span id="label-name-<?= $marca->getId(); ?>"> <?= $marca->getNombre(); ?></span>
-                                        <input type="text" class="form-control d-none" id="input-name-<?= $marca->getId(); ?>" name="name"
-                                            value="<?= $marca->getNombre(); ?>" required>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex justify-content-center gap-2">
-                                            <!-- Editar -->
-                                            <button class="btn btn-primary btn-sm" id="<?= $marca->getId(); ?>" type="button" onclick="toggleEdit(this)">
-                                                <i class="fas fa-edit"></i>
-                                            </button>
-
-                                            <!-- Guardar -->
-
-                                            <button class="btn btn-success btn-sm d-none" id="<?= $marca->getId(); ?>"  data-table="marca" type="button" onclick="saveEdit(this)">
-                                                <i class="fas fa-save"></i>
-                                            </button>
-
-                                            
-
-                                            <!-- Eliminar -->
-                                            <form method="POST" action="../actions/marca_borrar.php" class="d-inline">
-                                                <input type="hidden" name="id" value="<?= $marca->getId(); ?>">
-                                                <button type="button" class="btn btn-danger btn-sm" title="Eliminar"
-                                                    aria-label="Eliminar" onclick="confirmarEliminacion(this)"
-                                                    <?= ($marca->getHerramientas()) ?  "disabled" : "" ?>>
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </form>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <?php endforeach ?>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php 
+            modalShowObjects('departamento', $departamentos);
+            modalShowObjects('marca', $marcas);
+        ?>
     </section>
     <script>
 

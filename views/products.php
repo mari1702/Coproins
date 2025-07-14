@@ -1,5 +1,7 @@
 <?php
 include "../components/navbar.php";
+include "../components/modalShowObjects.php";
+
 require_once "../controllers/CategoriaController.php";
 require_once "../controllers/UnidadMedidaController.php";
 require_once "../controllers/ProductoController.php";
@@ -83,7 +85,7 @@ $productos = ProductoController::listar();
                                     </button>
 
                                     <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal"
-                                        data-bs-target="#ShowCategories">
+                                        data-bs-target="#show_categoria">
                                         <i class="fa fa-eye"></i>
                                     </button>
                                 </div>
@@ -113,7 +115,7 @@ $productos = ProductoController::listar();
                                     </button>
 
                                     <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal"
-                                        data-bs-target="#ShowMeasurements">
+                                        data-bs-target="#show_unidad">
                                         <i class="fa fa-eye"></i>
                                     </button>
                                 </div>     
@@ -358,139 +360,10 @@ $productos = ProductoController::listar();
     </section>
 
     <section>
-        <div class="modal fade" id="ShowMeasurements" tabindex="-1" aria-labelledby="modalShowMeasurements"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header bg-primary text-white">
-                        <h5 class="modal-title" id="modalShowMeasurements">Unidades de medida</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <table class="table" id="categoriesTable">
-                            <thead class="table-primary">
-                                <tr>
-                                    <th scope="col">ID</th>
-                                    <th scope='col'>Nombre</th>
-                                    <th scope="col" class="text-center">Acciones</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-
-
-                                <?php foreach($unidades as $unidad): ?>
-
-                                <tr>
-                                    <th scope="row"><?= $unidad->getId(); ?></th>
-                                    <td>
-                                        <span id="label-name-<?= $unidad->getId(); ?>"> <?= $unidad->getNombre(); ?></span>
-                                        <input type="text" class="form-control d-none" id="input-name-<?= $unidad->getId(); ?>" name="name"
-                                            value="<?= $unidad->getNombre(); ?>" required>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex justify-content-center gap-2">
-
-                                            <!-- Editar -->
-                                            <button class="btn btn-primary btn-sm" id="<?= $unidad->getId(); ?>" type="button" onclick="toggleEdit(this)">
-                                                <i class="fas fa-edit"></i>
-                                            </button>
-
-                                            <!-- Guardar -->
-
-                                            <button class="btn btn-success btn-sm d-none" id="<?= $unidad->getId(); ?>"  data-table="unidad" type="button" onclick="saveEdit(this)">
-                                                <i class="fas fa-save"></i>
-                                            </button>
-
-                                            <!-- Eliminar -->
-                                            <form method="POST" action="../actions/unidad_borrar.php" class="d-inline">
-                                                <input type="hidden" name="id" value="<?= $unidad->getId(); ?>">
-
-
-
-                                                <button type="button" class="btn btn-danger btn-sm" title="Eliminar"
-                                                    aria-label="Eliminar" onclick="confirmarEliminacion(this)"
-                                                    <?= ($unidad->getProductos()) ?  "disabled" : "" ?>>
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </form>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <?php endforeach ?>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="ShowCategories" tabindex="-1" aria-labelledby="modalShowCategories"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header bg-primary text-white">
-                        <h5 class="modal-title" id="modalShowCategories">Categorías</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                    <table class="table" id="categoriesTable">
-                            <thead class="table-primary">
-                                <tr>
-                                    <th scope="col">ID</th>
-                                    <th scope='col'>Nombre</th>
-                                    <th scope="col" class="text-center">Acciones</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-
-
-                                <?php foreach($categorias as $categoria): ?>
-
-                                <tr>
-                                    <th scope="row"><?= $categoria->getId(); ?></th>
-                                    <td>
-                                        <span id="label-name-<?= $categoria->getId(); ?>"> <?= $categoria->getNombre(); ?></span>
-                                        <input type="text" class="form-control d-none" id="input-name-<?= $categoria->getId(); ?>" name="name"
-                                            value="<?= $categoria->getNombre(); ?>" required>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex justify-content-center gap-2">
-                                            <!-- Editar -->
-                                            <button class="btn btn-primary btn-sm" id="<?= $categoria->getId(); ?>" type="button" onclick="toggleEdit(this)">
-                                                <i class="fas fa-edit"></i>
-                                            </button>
-
-                                            <!-- Guardar -->
-
-                                            <button class="btn btn-success btn-sm d-none" id="<?= $categoria->getId(); ?>"  data-table="categoria" type="button" onclick="saveEdit(this)">
-                                                <i class="fas fa-save"></i>
-                                            </button>
-
-                                            
-
-                                            <!-- Eliminar -->
-                                            <form method="POST" action="../actions/categoria_borrar.php" class="d-inline">
-                                                <input type="hidden" name="id" value="<?= $categoria->getId(); ?>">
-                                                <button type="button" class="btn btn-danger btn-sm" title="Eliminar"
-                                                    aria-label="Eliminar" onclick="confirmarEliminacion(this)"
-                                                    <?= ($categoria->getProductos()) ?  "disabled" : "" ?>>
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </form>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <?php endforeach ?>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php 
+            modalShowObjects('unidad', $unidades);
+            modalShowObjects('categoria', $categorias);
+        ?>
     </section>
     <script>
         function formatPrices() {
