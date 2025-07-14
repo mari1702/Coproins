@@ -1,6 +1,8 @@
 <?php
 include "../components/navbar.php";
 include "../components/modalShowObjects.php";
+include "../components/modalNewObject.php";
+
 
 require_once "../controllers/CategoriaController.php";
 require_once "../controllers/UnidadMedidaController.php";
@@ -80,7 +82,7 @@ $productos = ProductoController::listar();
 
                                 <div class="col-4 col-lg-2 align-content-center">
                                     <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
-                                        data-bs-target="#NewCategory">
+                                        data-bs-target="#new_categoria">
                                         <i class="fa fa-plus"></i>
                                     </button>
 
@@ -110,7 +112,7 @@ $productos = ProductoController::listar();
 
                                 <div class="col-4 col-lg-2 align-content-center">
                                     <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
-                                        data-bs-target="#NewMeasurement">
+                                        data-bs-target="#new_unidad">
                                         <i class="fa fa-plus"></i>
                                     </button>
 
@@ -306,57 +308,10 @@ $productos = ProductoController::listar();
     </section>
 
     <section>
-        <div class="modal fade" id="NewCategory" tabindex="-1" aria-labelledby="modalNewCategoryForm"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header bg-primary text-white">
-                        <h5 class="modal-title" id="modalNewCategoryForm">Registrar categoria</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-
-                        <form method="POST" action="../actions/categoria_crear.php">
-                            <div class="form-group mb-3">
-                                <label for="name"><b>Nombre</b></label>
-                                <input type="text" class="form-control" id="name" name="name"
-                                    placeholder="Ingrese el nombre de la categoria" required>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary col-12">Guardar</button>
-                        </form>
-
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="NewMeasurement" tabindex="-1" aria-labelledby="modalNewMeasurementForm"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header bg-primary text-white">
-                        <h5 class="modal-title" id="modalNewMeasurementForm">Registrar unidad de medida</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form method="POST" action="../actions/um_crear.php">
-                            <div class="form-group mb-3">
-                                <label for="name"><b>Nombre</b></label>
-                                <input type="text" class="form-control" id="name" name="name"
-                                    placeholder="Ingrese el nombre de la unidad de medida" required>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary col-12">Guardar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php 
+            modalNewObject('unidad');
+            modalNewObject('categoria');
+        ?>
     </section>
 
     <section>

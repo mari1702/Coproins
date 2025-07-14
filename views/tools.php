@@ -1,6 +1,7 @@
 <?php
 include "../components/navbar.php";
 include "../components/modalShowObjects.php";
+include "../components/modalNewObject.php";
 
 require_once "../controllers/DepartamentoController.php";
 require_once "../controllers/MarcaController.php";
@@ -80,7 +81,7 @@ $herramientas = HerramientaController::listar();
 
                                 <div class="col-4 col-lg-2 align-content-center">
                                     <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
-                                        data-bs-target="#NewDepartment">
+                                        data-bs-target="#new_departamento">
                                         <i class="fa fa-plus"></i>
                                     </button>
 
@@ -111,7 +112,7 @@ $herramientas = HerramientaController::listar();
 
                                 <div class="col-4 col-lg-2 align-content-center">
                                     <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
-                                        data-bs-target="#NewBrand">
+                                        data-bs-target="#new_marca">
                                         <i class="fa fa-plus"></i>
                                     </button>
 
@@ -299,58 +300,10 @@ $herramientas = HerramientaController::listar();
     </section>
 
     <section>
-        <div class="modal fade" id="NewDepartment" tabindex="-1" aria-labelledby="modalNewDepartmentForm"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header bg-primary text-white">
-                        <h5 class="modal-title" id="modalNewDepartmentForm">Registrar departamento</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-
-                        <form method="POST" action="../actions/departamento_crear.php">
-                            <div class="form-group mb-3">
-                                <label for="name"><b>Nombre</b></label>
-                                <input type="text" class="form-control" id="name" name="name"
-                                    placeholder="Ingrese el nombre de la categoria" required>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary col-12">Guardar</button>
-                        </form>
-
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="modal fade" id="NewBrand" tabindex="-1" aria-labelledby="modalNewBrandForm"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header bg-primary text-white">
-                        <h5 class="modal-title" id="modalNewBrandForm">Registrar marca</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form method="POST" action="../actions/marca_crear.php">
-                            <div class="form-group mb-3">
-                                <label for="name"><b>Nombre</b></label>
-                                <input type="text" class="form-control" id="name" name="name"
-                                    placeholder="Ingrese el nombre de la unidad de medida" required>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary col-12">Guardar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php 
+            modalNewObject('departamento');
+            modalNewObject('marca');
+        ?>
     </section>
 
     <section>
