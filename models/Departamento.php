@@ -1,11 +1,11 @@
 <?php
 require_once '../core/Database.php';
 
-class UnidadMedida {
+class Departamento {
     private $id;
     private $nombre;
 
-    public function __construct($id = null, $nombre=null) {
+    public function __construct( $id = null, $nombre=null) {
         $this->nombre = $nombre;
         $this->id = $id;       
     }
@@ -14,12 +14,12 @@ class UnidadMedida {
 
         try {
             $db = Database::getConnection();
-            $stmt = $db->query("SELECT * FROM um");
+            $stmt = $db->query("SELECT * FROM departamento");
             $results = [];
 
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                $results[] = new UnidadMedida(
-                    $row['um_id'],
+                $results[] = new Departamento(
+                    $row['departamento_id'],
                     $row['nombre']
                 ); 
             }
@@ -36,11 +36,11 @@ class UnidadMedida {
         $db = Database::getConnection();
         if ($this->id) {
             // Update existing record
-            $stmt = $db->prepare("UPDATE um SET nombre = ? WHERE um_id = ?");
+            $stmt = $db->prepare("UPDATE departamento SET nombre = ? WHERE departamento_id = ?");
             $stmt->execute([$this->nombre, $this->id]);
         } else {
             // Insert new record
-            $stmt = $db->prepare("INSERT INTO um (nombre) VALUES (?)");
+            $stmt = $db->prepare("INSERT INTO departamento (nombre) VALUES (?)");
             $stmt->execute([$this->nombre]);
             $this->id = $db->lastInsertId();
         }
@@ -48,12 +48,12 @@ class UnidadMedida {
 
     public static function getById($id) {
         $db = Database::getConnection();
-        $stmt = $db->prepare("SELECT * FROM um WHERE um_id = ?");
+        $stmt = $db->prepare("SELECT * FROM departamento WHERE departamento_id = ?");
         $stmt->execute([$id]);
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         
         if ($row) {
-            return new UnidadMedida( $row['um_id'], $row['nombre']);
+            return new Departamento( $row['departamento_id'],$row['nombre']);
         }
         return null;
     }
@@ -61,7 +61,7 @@ class UnidadMedida {
     public function delete() {
         if ($this->id) {
             $db = Database::getConnection();
-            $stmt = $db->prepare("DELETE FROM um WHERE um_id = ?");
+            $stmt = $db->prepare("DELETE FROM departamento WHERE departamento_id = ?");
             $stmt->execute([$this->id]);
             return $stmt->rowCount() > 0;
         }
@@ -77,17 +77,16 @@ class UnidadMedida {
         return $this->nombre;
     }
 
-    public function getProductos() {
+    public function getHerramientas() {
         $db = Database::getConnection();
-        $stmt = $db->prepare("SELECT * FROM producto WHERE um_um_id = ?");
+        $stmt = $db->prepare("SELECT * FROM herramienta WHERE departamento_departamento_id = ?");
         $stmt->execute([$this->id]);
         $results = [];
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            $results[] = Producto::getById($row['producto_id']);
+            $results[] = Herramienta::getById($row['herramienta_id']);
         }
         return $results;
     }
-
 
     // Setters
     public function setNombre($nombre) {

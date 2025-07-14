@@ -88,6 +88,7 @@ class Categoria {
         return $results;
     }
 
+
     // Setters
     public function setNombre($nombre) {
         $this->nombre = $nombre;
