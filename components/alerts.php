@@ -1,5 +1,6 @@
 <?php
-function alerts() {
+function alerts()
+{
     if (isset($_GET['status']) && $_GET['status'] === 'success') {
         echo '<div class="alert alert-success" role="alert">Cambios realizados exitosamente!</div>';
     }
@@ -9,4 +10,3 @@ function alerts() {
         echo '<div class="alert alert-danger" role="alert">' . $message . '</div>';
     }
 }
-?>

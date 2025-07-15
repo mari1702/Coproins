@@ -1,5 +1,6 @@
 <?php
-function navBar($activeLink){
+function navBar($activeLink)
+{
     echo "
         <nav class='navbar navbar-expand-lg shadow p-3 mb-3 ' style='background-color: #55BCD1;'>
             <div class='container-fluid'>

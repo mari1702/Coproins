@@ -1,300 +1,353 @@
 <?php
+require_once "../components/templates/template.php";
 require_once "../models/Cotizacion.php";
 
 $cotizacion = Cotizacion::getById($_GET['id']);
 $productos = $cotizacion->getProductos();
 
+
+startTemplate("Cotizacion");
+
 ?>
+<section class="container-fluid">
+    <div class="row m-4">
+        <div class="d-flex justify-content-end mb-3">
+            <button class="btn btn-primary" onclick="downloadPDF()">
+                <i class="fas fa-download"></i> Descargar PDF
+            </button>
+        </div>
+    </div>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--  Bootstrap CSS    -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <!--  Navbar CSS    -->
-    <link rel="stylesheet" href="../css/navbar.css">
-    <!-- Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
-
-    <title>Cotización</title>
-
-</head>
-<body>
-    <section class="container-fluid">
-        <div class="row m-4">
-            <div class="d-flex justify-content-end mb-3">
-                <button class="btn btn-primary" onclick="downloadPDF()">
-                    <i class="fas fa-download"></i> Descargar PDF
-                </button>
+</section>
+<section class="container" id="cotizacion">
+    <div class="row m-4">
+        <div class="row">
+            <div class="col-11">
+                <p class="text-center bg-secondary-subtle">IMPORTACIONES ALSO</p>
+            </div>
+            <div class="col-1 text-end">
+                <img src="../images/logo-also.png" alt="logo" height="25" style="max-height: 25px;">
             </div>
         </div>
-        
-    </section>
-    <section class="container" id="cotizacion">
-        <div class="row m-4">
-            <div class="row">
-                <div class="col-11">
-                    <p class="text-center bg-secondary-subtle">IMPORTACIONES ALSO</p>
-                </div>
-                <div class="col-1 text-end">
-                    <img src="../images/logo-also.png" alt="logo" height="25" style="max-height: 25px;">
-                </div>
-            </div>
-            
-            <p class="text-end">Folio: <?= $cotizacion->getId()?></p>
-            <p class="text-end">Fecha: <?= $cotizacion->getFecha()?></p>                
-        
-            <p>Atención:</p> <!-- Atención: Aqui se inserta el nombre de quien genero la cotizacion, obtener su nombre de la session-->
-            <p>Cliente: <?= $cotizacion->getCliente()?></p> <!-- Aqui se inserta el nombre del cliente, obtener su nombre de la base de datos-->
-            <p>Proyecto: <?= $cotizacion->getNombreProyecto()?></p>
-            <table class="table border border-dark" id="pricesTable" >
-                <thead>
-                    <tr>
-                        <td scope="col" class="border border-dark" >Descripción</td>
-                        <td scope="col" class="border border-dark">Unidad</td>
-                        <td scope="col" class="border border-dark">Cantidad</td>
-                        <td scope="col" class="border border-dark">Precio</td>
-                        <td scope="col" class="border border-dark">Total</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php 
-                    $productosPorCategoria = [];
-                    foreach($productos as $producto) {
-                        $categoria = $producto['producto']->getCategoria()->getNombre();
-                        if(!isset($productosPorCategoria[$categoria])) {
-                            $productosPorCategoria[$categoria] = [];
-                        }
-                        $productosPorCategoria[$categoria][] = $producto;
-                    }
 
-                    foreach($productosPorCategoria as $categoria => $productosCategoria):
-                        $totalCategoria = 0;
-                        foreach($productosCategoria as $producto) {
-                            $totalCategoria += $producto['producto']->getPrecio() * $producto['cantidad'];
-                        }
-                    ?>
+        <p class="text-end">Folio: <?= $cotizacion->getId() ?></p>
+        <p class="text-end">Fecha: <?= $cotizacion->getFecha() ?></p>
+
+        <p>Atención:</p> <!-- Atención: Aqui se inserta el nombre de quien genero la cotizacion, obtener su nombre de la session-->
+        <p>Cliente: <?= $cotizacion->getCliente() ?></p> <!-- Aqui se inserta el nombre del cliente, obtener su nombre de la base de datos-->
+        <p>Proyecto: <?= $cotizacion->getNombreProyecto() ?></p>
+        <table class="table border border-dark" id="pricesTable">
+            <thead>
+                <tr>
+                    <td scope="col" class="border border-dark">Descripción</td>
+                    <td scope="col" class="border border-dark">Unidad</td>
+                    <td scope="col" class="border border-dark">Cantidad</td>
+                    <td scope="col" class="border border-dark">Precio</td>
+                    <td scope="col" class="border border-dark">Total</td>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $productosPorCategoria = [];
+                foreach ($productos as $producto) {
+                    $categoria = $producto['producto']->getCategoria()->getNombre();
+                    if (!isset($productosPorCategoria[$categoria])) {
+                        $productosPorCategoria[$categoria] = [];
+                    }
+                    $productosPorCategoria[$categoria][] = $producto;
+                }
+
+                foreach ($productosPorCategoria as $categoria => $productosCategoria):
+                    $totalCategoria = 0;
+                    foreach ($productosCategoria as $producto) {
+                        $totalCategoria += $producto['producto']->getPrecio() * $producto['cantidad'];
+                    }
+                ?>
                     <tr>
                         <td colspan="4" class="table-primary border border-dark text-uppercase">
-                           <?= $categoria ?>
+                            <?= $categoria ?>
                         </td>
                         <td class="table-primary border border-dark price-format">
                             <?= $totalCategoria ?>
                         </td>
                     </tr>
-                    <?php foreach($productosCategoria as $producto):?>
-                    <tr class="border border-dark">
-                        <td class="border border-dark"><?= $producto['producto']->getDescripcion()?></td>
-                        <td class="border border-dark"><?= $producto['producto']->getUnidadMedida()->getNombre()?></td>
-                        <td class="border border-dark"><?= $producto['cantidad']?></td>
-                        <td class="border border-dark price-format"><?= $producto['producto']->getPrecio()?></td>
-                        <td class="border border-dark price-format"><?= $producto['producto']->getPrecio() * $producto['cantidad']?></td>
-                    </tr>
-                    <?php endforeach;
-                    endforeach;?>
-                    <tr>
-                        <td colspan="3" class="border-0"></td>
-                        <td class="border border-dark ">Subtotal</td>
-                        <td class="border border-dark price-format"><?= $cotizacion->getTotal()?></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3" class="border-0" ></td>
-                        <td class="border border-dark">IVA</td>
-                        <td class="border border-dark price-format"><?= $cotizacion->getTotal() * 0.16?></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3" class="border-0"></td>
-                        <td class="border border-dark">Total</td>
-                        <td class="border border-dark price-format"><?= $cotizacion->getTotal() + $cotizacion->getTotal() * 0.16?></td>
-                    </tr>
-                </tbody>
-                
-            </table>
-                
-            <div class="text-justify mb-3">
-                <!-- Añadir un for each en caso de tener mas notas  -->
-                <?php foreach($cotizacion->getNotas() as $nota):?>
-                <p><?= $nota->getNota()?></p>
-                <?php endforeach;?>
-                <p>En caso de aceptar las condiciones tecnico economicas, favor de regresar autorizada esta cotizacion acompañada de su orden de compra y comprobante de pago de anticipo por email.</p>
-                <p>Sin mas por el momento, quedo a sus ordenes para cualquier explicación o aclaración en espera de colaborar con el presente proyecto.</p>
-            </div>
-            <div class="mb-5">
-                <p class="text-uppercase text-center">Atentamente:</p>
-            </div>
-            <p class="text-uppercase text-center">____________________________________________</p>
-            <p class="text-center"> <b>Ing. Servando Flores Martinez</b> </p>
-            <p class="text-center">Coordinador de Inst. Electromecanicas Especiales</p>
+                    <?php foreach ($productosCategoria as $producto): ?>
+                        <tr class="border border-dark">
+                            <td class="border border-dark"><?= $producto['producto']->getDescripcion() ?></td>
+                            <td class="border border-dark"><?= $producto['producto']->getUnidadMedida()->getNombre() ?></td>
+                            <td class="border border-dark"><?= $producto['cantidad'] ?></td>
+                            <td class="border border-dark price-format"><?= $producto['producto']->getPrecio() ?></td>
+                            <td class="border border-dark price-format"><?= $producto['producto']->getPrecio() * $producto['cantidad'] ?></td>
+                        </tr>
+                <?php endforeach;
+                endforeach; ?>
+                <tr>
+                    <td colspan="3" class="border-0"></td>
+                    <td class="border border-dark ">Subtotal</td>
+                    <td class="border border-dark price-format"><?= $cotizacion->getTotal() ?></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="border-0"></td>
+                    <td class="border border-dark">IVA</td>
+                    <td class="border border-dark price-format"><?= $cotizacion->getTotal() * 0.16 ?></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="border-0"></td>
+                    <td class="border border-dark">Total</td>
+                    <td class="border border-dark price-format"><?= $cotizacion->getTotal() + $cotizacion->getTotal() * 0.16 ?></td>
+                </tr>
+            </tbody>
 
+        </table>
 
+        <div class="text-justify mb-3">
+            <!-- Añadir un for each en caso de tener mas notas  -->
+            <?php foreach ($cotizacion->getNotas() as $nota): ?>
+                <p><?= $nota->getNota() ?></p>
+            <?php endforeach; ?>
+            <p>En caso de aceptar las condiciones tecnico economicas, favor de regresar autorizada esta cotizacion acompañada de su orden de compra y comprobante de pago de anticipo por email.</p>
+            <p>Sin mas por el momento, quedo a sus ordenes para cualquier explicación o aclaración en espera de colaborar con el presente proyecto.</p>
         </div>
-        
-    </section>
+        <div class="mb-5">
+            <p class="text-uppercase text-center">Atentamente:</p>
+        </div>
+        <p class="text-uppercase text-center">____________________________________________</p>
+        <p class="text-center"> <b>Ing. Servando Flores Martinez</b> </p>
+        <p class="text-center">Coordinador de Inst. Electromecanicas Especiales</p>
+
+
+    </div>
+
+</section>
 
 
 
-    
-    <script>
-        
 
-        function formatPrices() {
-            document.querySelectorAll('.price-format').forEach(element => {
-                const price = parseInt(element.textContent);
-                element.textContent = new Intl.NumberFormat('es-MX', {
-                    style: 'currency',
-                    currency: 'MXN',
-                    minimumFractionDigits: 2
-                }).format(price / 1);
+<script>
+    function formatPrices() {
+        document.querySelectorAll('.price-format').forEach(element => {
+            const price = parseInt(element.textContent);
+            element.textContent = new Intl.NumberFormat('es-MX', {
+                style: 'currency',
+                currency: 'MXN',
+                minimumFractionDigits: 2
+            }).format(price / 1);
+        });
+    }
+
+    function downloadPDF() {
+        const {
+            jsPDF
+        } = window.jspdf;
+        const doc = new jsPDF();
+
+        // Configuración inicial
+        doc.setFont("helvetica");
+        doc.setFontSize(12);
+
+        // Agregar logo
+        const img = new Image();
+        img.src = '../images/logo-also.png';
+
+        // Esperar a que la imagen se cargue
+        img.onload = function() {
+
+            // Información de la cotización
+            doc.setFontSize(10);
+            doc.text(`Folio: ${<?= $cotizacion->getId() ?>}`, 195, 25, {
+                align: "right"
             });
-        }
+            doc.text(`Fecha: ${<?= json_encode($cotizacion->getFecha()) ?>}`, 195, 30, {
+                align: "right"
+            });
 
-        function downloadPDF() {
-            const { jsPDF } = window.jspdf;
-            const doc = new jsPDF();
-            
-            // Configuración inicial
-            doc.setFont("helvetica");
-            doc.setFontSize(12);
-            
-            // Agregar logo
-            const img = new Image();
-            img.src = '../images/logo-also.png';
-            
-            // Esperar a que la imagen se cargue
-            img.onload = function() {
-                
-                // Información de la cotización
-                doc.setFontSize(10);
-                doc.text(`Folio: ${<?= $cotizacion->getId()?>}`, 195, 25, { align: "right" });
-                doc.text(`Fecha: ${<?= json_encode($cotizacion->getFecha())?>}`, 195, 30, { align: "right" });
-                
-                // Datos del cliente
-                doc.text("Atención:", 15, 35);
-                doc.text("Cliente: <?= $cotizacion->getCliente()?>", 15, 45);
-                doc.text(`Proyecto: ${<?= json_encode($cotizacion->getNombreProyecto())?>}`, 15, 55);
-                
-                // Tabla de productos
-                const tableColumn = ["Descripción", "Unidad", "Cantidad", "Precio", "Total"];
-                const tableRows = [];
-                
-                <?php foreach($productosPorCategoria as $categoria => $productosCategoria): 
-                    $totalCategoria = 0;
-                    foreach($productosCategoria as $producto) {
-                        $totalCategoria += $producto['producto']->getPrecio() * $producto['cantidad'];
+            // Datos del cliente
+            doc.text("Atención:", 15, 35);
+            doc.text("Cliente: <?= $cotizacion->getCliente() ?>", 15, 45);
+            doc.text(`Proyecto: ${<?= json_encode($cotizacion->getNombreProyecto()) ?>}`, 15, 55);
+
+            // Tabla de productos
+            const tableColumn = ["Descripción", "Unidad", "Cantidad", "Precio", "Total"];
+            const tableRows = [];
+
+            <?php foreach ($productosPorCategoria as $categoria => $productosCategoria):
+                $totalCategoria = 0;
+                foreach ($productosCategoria as $producto) {
+                    $totalCategoria += $producto['producto']->getPrecio() * $producto['cantidad'];
+                }
+            ?>
+                tableRows.push([{
+                    content: "<?= $categoria ?>",
+                    colSpan: 4,
+                    styles: {
+                        fillColor: [200, 200, 200]
                     }
-                ?>
-                    tableRows.push([{
-                        content: "<?= $categoria ?>",
-                        colSpan: 4,
-                        styles: { fillColor: [200, 200, 200] }
-                    }, {
-                        content: "$<?= number_format($totalCategoria, 2) ?>",
-                        styles: { halign: 'right' }
-                    }]);
-                    
-                    <?php foreach($productosCategoria as $producto): ?>
+                }, {
+                    content: "$<?= number_format($totalCategoria, 2) ?>",
+                    styles: {
+                        halign: 'right'
+                    }
+                }]);
+
+                <?php foreach ($productosCategoria as $producto): ?>
                     tableRows.push([
                         <?= json_encode($producto['producto']->getDescripcion()) ?>,
                         <?= json_encode($producto['producto']->getUnidadMedida()->getNombre()) ?>,
                         <?= json_encode($producto['cantidad']) ?>,
-                        "$"+<?= json_encode(number_format($producto['producto']->getPrecio(), 2)) ?>,
-                        "$"+<?= json_encode(number_format($producto['producto']->getPrecio() * $producto['cantidad'], 2)) ?>
+                        "$" + <?= json_encode(number_format($producto['producto']->getPrecio(), 2)) ?>,
+                        "$" + <?= json_encode(number_format($producto['producto']->getPrecio() * $producto['cantidad'], 2)) ?>
                     ]);
-                    <?php endforeach; ?>
                 <?php endforeach; ?>
-                
-                // Totales
-                const subtotal = <?= $cotizacion->getTotal() ?>;
-                const iva = subtotal * 0.16;
-                const total = subtotal + iva;
-                
-                tableRows.push(
-                    [{ content: "", border: false},{ content: "", border: false},{ content: "", border: false},{ content: "IVA", }, { content: "$"+iva.toFixed(2), styles: { halign: 'right' } }],
-                    [{ content: "", border: false},{ content: "", border: false},{ content: "", border: false},{ content: "Total",}, { content: "$"+total.toFixed(2), styles: { halign: 'right' } }],
-                    [{ content: "", border: false},{ content: "", border: false},{ content: "", border: false},{ content: "Subtotal", }, { content: "$"+subtotal.toFixed(2), styles: { halign: 'right' } }]
-                );
-                
-                doc.autoTable({
-                    head: [tableColumn],
-                    body: tableRows,
-                    startY: 60,
-                    theme: 'grid',
+            <?php endforeach; ?>
+
+            // Totales
+            const subtotal = <?= $cotizacion->getTotal() ?>;
+            const iva = subtotal * 0.16;
+            const total = subtotal + iva;
+
+            tableRows.push(
+                [{
+                    content: "",
+                    border: false
+                }, {
+                    content: "",
+                    border: false
+                }, {
+                    content: "",
+                    border: false
+                }, {
+                    content: "IVA",
+                }, {
+                    content: "$" + iva.toFixed(2),
                     styles: {
-                        fontSize: 10,
-                        cellPadding: 3
-                    },
-                    headStyles: {
-                        fillColor: [85, 188, 209],
-                        textColor: 255
-                    },
-                    pageBreak: 'auto',
-                    margin: { top: 60 },
-                    didDrawPage: function(data) {
-                        // Agregar encabezado y logo en cada página
-                        doc.setFontSize(16);
-                        doc.text("IMPORTACIONES ALSO", 105, 15, { align: "center" });
-                        doc.addImage(img, 'PNG', 160, 10, 40, 10);
-                        
-                        // Agregar pie de página
-                        doc.setFontSize(10);
-                        doc.text("IMPORTACIONES ALSO", 10, 285);
-                        doc.text("Cel: 55 45 57 88 96", 150, 285);
-                        doc.text("Mail: proyectos@imp-also.com", 150, 290);
+                        halign: 'right'
                     }
-                });
-                
-                // Notas y firma
-                const finalY = doc.lastAutoTable.finalY + 10;
-                
-                // Verificar si hay espacio suficiente para las notas y firma
-                if (finalY > 250) {
-                    doc.addPage();
-                    doc.setFontSize(10);
-                } else {
-                    doc.setFontSize(10);
+                }],
+                [{
+                    content: "",
+                    border: false
+                }, {
+                    content: "",
+                    border: false
+                }, {
+                    content: "",
+                    border: false
+                }, {
+                    content: "Total",
+                }, {
+                    content: "$" + total.toFixed(2),
+                    styles: {
+                        halign: 'right'
+                    }
+                }],
+                [{
+                    content: "",
+                    border: false
+                }, {
+                    content: "",
+                    border: false
+                }, {
+                    content: "",
+                    border: false
+                }, {
+                    content: "Subtotal",
+                }, {
+                    content: "$" + subtotal.toFixed(2),
+                    styles: {
+                        halign: 'right'
+                    }
+                }]
+            );
 
+            doc.autoTable({
+                head: [tableColumn],
+                body: tableRows,
+                startY: 60,
+                theme: 'grid',
+                styles: {
+                    fontSize: 10,
+                    cellPadding: 3
+                },
+                headStyles: {
+                    fillColor: [85, 188, 209],
+                    textColor: 255
+                },
+                pageBreak: 'auto',
+                margin: {
+                    top: 60
+                },
+                didDrawPage: function(data) {
+                    // Agregar encabezado y logo en cada página
+                    doc.setFontSize(16);
+                    doc.text("IMPORTACIONES ALSO", 105, 15, {
+                        align: "center"
+                    });
+                    doc.addImage(img, 'PNG', 160, 10, 40, 10);
+
+                    // Agregar pie de página
+                    doc.setFontSize(10);
+                    doc.text("IMPORTACIONES ALSO", 10, 285);
+                    doc.text("Cel: 55 45 57 88 96", 150, 285);
+                    doc.text("Mail: proyectos@imp-also.com", 150, 290);
                 }
+            });
 
-                
-                var yPosition = finalY; // Posición inicial después de la tabla
+            // Notas y firma
+            const finalY = doc.lastAutoTable.finalY + 10;
 
-                const notas = <?= json_encode(array_map(function($nota) { return $nota->getNota(); }, $cotizacion->getNotas())) ?>;
+            // Verificar si hay espacio suficiente para las notas y firma
+            if (finalY > 250) {
+                doc.addPage();
+                doc.setFontSize(10);
+            } else {
+                doc.setFontSize(10);
 
-                notas.forEach(nota => {
-                    doc.text(nota, 15, yPosition, { maxWidth: 175 });
-                    yPosition = yPosition + 10; // Incrementar la posición para el siguiente párrafo
-                    console.log(yPosition);
+            }
+
+
+            var yPosition = finalY; // Posición inicial después de la tabla
+
+            const notas = <?= json_encode(array_map(function ($nota) {
+                                return $nota->getNota();
+                            }, $cotizacion->getNotas())) ?>;
+
+            notas.forEach(nota => {
+                doc.text(nota, 15, yPosition, {
+                    maxWidth: 175
                 });
-                                
-                doc.text("En caso de aceptar las condiciones tecnico economicas, favor de regresar autorizada esta cotizacion acompañada de su orden de compra y comprobante de pago de anticipo por email.", 15, yPosition, { maxWidth: 175 });
-                
-                doc.text("Sin mas por el momento, quedo a sus ordenes para cualquier explicación o aclaración en espera de colaborar con el presente proyecto.", 15, yPosition + 10 , { maxWidth: 175 });
-                
-                // Firma
-                doc.text("ATENTAMENTE:", 105, yPosition + 30, { align: "center" });
-                doc.text("____________________________________________", 105, yPosition + 50, { align: "center" });
-                doc.text("Ing. Gerardo Moreno Borja", 105, yPosition + 55, { align: "center" });
-                
-                // Guardar el PDF
-                doc.save(`cotizacion_${<?= $cotizacion->getId() ?>}.pdf`);
-            };
-        }
+                yPosition = yPosition + 10; // Incrementar la posición para el siguiente párrafo
+                console.log(yPosition);
+            });
 
-        document.addEventListener('DOMContentLoaded', function() {
-            formatPrices();
-        });
-    </script>
-    
+            doc.text("En caso de aceptar las condiciones tecnico economicas, favor de regresar autorizada esta cotizacion acompañada de su orden de compra y comprobante de pago de anticipo por email.", 15, yPosition, {
+                maxWidth: 175
+            });
 
-    <!--   Bootstrap JS   -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
-</body>
-</html>
+            doc.text("Sin mas por el momento, quedo a sus ordenes para cualquier explicación o aclaración en espera de colaborar con el presente proyecto.", 15, yPosition + 10, {
+                maxWidth: 175
+            });
+
+            // Firma
+            doc.text("ATENTAMENTE:", 105, yPosition + 30, {
+                align: "center"
+            });
+            doc.text("____________________________________________", 105, yPosition + 50, {
+                align: "center"
+            });
+            doc.text("Ing. Gerardo Moreno Borja", 105, yPosition + 55, {
+                align: "center"
+            });
+
+            // Guardar el PDF
+            doc.save(`cotizacion_${<?= $cotizacion->getId() ?>}.pdf`);
+        };
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        formatPrices();
+    });
+</script>
+
+
+<?php
+endTemplate();
