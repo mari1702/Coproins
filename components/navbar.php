@@ -23,11 +23,15 @@ function navBar($activeLink){
                         </li>
 
                         <li class='nav-item'>
+                            <a class='nav-link " . ($activeLink === 'herramientas' ? 'active' : '') . "' href='tools.php'>Herramientas</a>
+                        </li>
+
+                        <li class='nav-item'>
                             <a class='nav-link " . ($activeLink === 'cotizaciones' ? 'active' : '') . "' href='prices.php'>Cotizaciones</a>
                         </li>
 
                         <li class='nav-item'>
-                            <a class='nav-link " . ($activeLink === 'herramientas' ? 'active' : '') . "' href='tools.php'>Herramientas</a>
+                            <a class='nav-link " . ($activeLink === 'inventarios' ? 'active' : '') . "' href='inventories.php'>Inventarios</a>
                         </li>
 
                         <li>

@@ -16,7 +16,6 @@ class CategoriaController {
     public static function crear() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $nombre = $_POST['name'];
-            $producto_id = $_POST['producto_id'];
 
             if ($nombre === '') {
                 $error = 'El nombre de la categoría no puede estar vacío.';
@@ -27,11 +26,6 @@ class CategoriaController {
             try {
                 $categoria = new Categoria(null, $nombre);
                 $categoria->save();
-
-                if ($producto_id) {
-                    header('Location: ../views/edit-product.php?id='.$producto_id.'&status=success');
-                    exit;
-                }
 
                 header('Location: ../views/products.php?status=success');
                 exit;

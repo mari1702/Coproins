@@ -1,7 +1,7 @@
 <?php
 require_once '../core/Database.php';
 require_once '../models/Departamento.php';
-require_once '../models/UnidadMedida.php';
+require_once '../models/Marca.php';
 
 class Herramienta {
     private $id;

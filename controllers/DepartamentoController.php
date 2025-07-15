@@ -16,7 +16,6 @@ class DepartamentoController {
     public static function crear() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $nombre = $_POST['name'];
-            $herramienta_id = $_POST['herramienta_id'];
 
             if ($nombre === '') {
                 $error = 'El nombre de la categoría no puede estar vacío.';
@@ -27,11 +26,6 @@ class DepartamentoController {
             try {
                 $departamento = new Departamento(null, $nombre);
                 $departamento->save();
-
-                if ($herramienta_id) {
-                    header('Location: ../views/edit-product.php?id='.$herramienta_id.'&status=success');
-                    exit;
-                }
 
                 header('Location: ../views/tools.php?status=success');
                 exit;
