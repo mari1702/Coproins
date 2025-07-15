@@ -1,5 +1,6 @@
 <?php
 include "../components/navbar.php";
+include "../components/alerts.php";
 
 require_once "../controllers/ProductoController.php";
 require_once "../controllers/CategoriaController.php";
@@ -38,9 +39,9 @@ $cotizaciones = CotizacionController::listar();
 
 
     <section class="container-fluid">
-        <?php if (isset($_GET['status']) && $_GET['status'] === 'success'): ?>
-            <div class="alert alert-success" role="alert"> Cambios realizados exitosamente!</div>
-        <?php endif; ?>
+        <?php
+        alerts();
+        ?>
         <div class=" new row justify-content-center d-none">
             <div class="card col-sm-11 col-md-8 col-lg-6 shadow p-3 mb-5 bg-white rounded border-0">
                 <div class="card-header bg-white">

@@ -38,15 +38,6 @@ $cotizacion = new Cotizacion()->getById($_GET['id']);
     </header>
 
     <section class="container-fluid">
-        <?php if (isset($_GET['status']) && $_GET['status'] === 'success'): ?>
-            <div class="alert alert-success" role="alert"> Cambios realizados exitosamente!</div>
-        <?php endif; ?>
-
-        <?php if (!empty($error)): ?>
-            <div class="alert alert-danger" role="alert">
-                <?= htmlspecialchars($error) ?>
-            </div>
-        <?php endif; ?>
 
         <div class="row justify-content-center">
             <div class=" mb-3">
