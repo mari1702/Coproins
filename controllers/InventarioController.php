@@ -117,7 +117,6 @@ class InventarioController {
 
             // Eliminar herramientas de el inventario
             $oldHerramientas = $inventario->getHerramientas();
-            error_log(print_r($herramientas, true));   
 
             foreach ($oldHerramientas as $herramienta) {
                 $inventario->removeTool($herramienta['herramienta']->getId());

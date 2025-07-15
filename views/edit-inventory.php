@@ -288,7 +288,7 @@ $inventario = new Inventario()->getById($_GET['id']);
                                         </div>
                                     </div>
                                     `}
-                                    <div class=" ${item.img == null ? 'col-12 col-sm-6 col-md-4 col-lg-4' : 'col-10 col-sm-4 col-md-2 col-lg-4'}">
+                                    <div class=" ${item.img == null ? 'col-12 col-sm-8 col-md-6 col-lg-6' : 'col-10 col-sm-4 col-md-2 col-lg-4'}">
                                         <h6 class="card-title mb-1 fw-bold text-truncate">${item.description}</h6>
                                         <p class="card-text text-muted small mb-1">${item.description}</p>
                                         <span class="badge bg-primary text-white">ID: ${item.id}</span>
@@ -300,7 +300,7 @@ $inventario = new Inventario()->getById($_GET['id']);
                                             <input type="number" class="form-control text-center quantity-input" 
                                                 value="${item.quantity}" min="1" 
                                                 data-tool-id="${item.id}"
-                                                >
+                                                onchange="updateQuantity(this)">
                                         </div>
                                     </div>
                                     
@@ -341,7 +341,15 @@ $inventario = new Inventario()->getById($_GET['id']);
                 cartContainer.innerHTML = cartHTML;
             }
 
-    
+            // Función para actualizar cantidad
+            window.updateQuantity = function(input) {
+                const toolId = input.dataset.toolId;
+                const quantity = parseInt(input.value);
+                const tool = cart.find(item => item.id === toolId);
+                if (tool) {
+                    tool.quantity = quantity;
+                }
+            };
 
             window.removeFromCart = function(toolId) {
                 cart = cart.filter(item => item.id !== toolId);
