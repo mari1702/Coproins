@@ -1,5 +1,6 @@
 <?php
 require_once "../components/templates/template.php";
+require_once "../components/organisms/toolForm.php";
 
 include "../components/navbar.php";
 include "../components/modalShowObjects.php";
@@ -40,82 +41,9 @@ startTemplate("Herramientas")
             <div class="card-body">
 
                 <h2 class="text-center">Registrar herramienta</h2>
-                <form method="POST" action="../actions/herramienta_crear.php" enctype="multipart/form-data">
-
-                    <div class="form-group mb-3">
-                        <label for="department"><b>Departamento</b></label>
-
-                        <div class="row">
-                            <div class="col-8 col-lg-10">
-                                <select id="department" name="department" class="form-control" required>
-                                    <option disabled selected="">Seleccione departamento</option>
-                                    <?php
-                                    foreach ($departamentos as $departamento) {
-                                        echo "
-                                                    <option value='" . htmlspecialchars($departamento->getId()) . "'>" . htmlspecialchars($departamento->getNombre())  . "</option>
-                                                ";
-                                    }
-                                    ?>
-                                </select>
-                            </div>
-
-                            <div class="col-4 col-lg-2 align-content-center">
-                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#new_departamento">
-                                    <i class="fa fa-plus"></i>
-                                </button>
-
-                                <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#show_departamento">
-                                    <i class="fa fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="form-group mb-3">
-                        <label for="brand"><b>Marca</b></label>
-                        <div class="row">
-                            <div class="col-8 col-lg-10">
-                                <select id="brand" name="brand" class="form-control" required>
-                                    <option disabled selected="">Seleccione marca</option>
-                                    <?php
-                                    foreach ($marcas as $marca) {
-                                        echo "
-                                                    <option value='" . htmlspecialchars($marca->getId()) . "'>" . htmlspecialchars($marca->getNombre())  . "</option>
-                                                ";
-                                    }
-                                    ?>
-                                </select>
-                            </div>
-
-                            <div class="col-4 col-lg-2 align-content-center">
-                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#new_marca">
-                                    <i class="fa fa-plus"></i>
-                                </button>
-
-                                <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#show_marca">
-                                    <i class="fa fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group mb-3">
-                        <label for="description"><b>Descripción</b></label>
-                        <textarea class="form-control" id="description" name="description" rows="3"
-                            placeholder="Ingrese la descripción del producto" required></textarea>
-                    </div>
-
-                    <div class="form-group mb-3">
-                        <label for="image"><b>Imagen</b></label>
-                        <input type="file" class="form-control-file" id="image" name="image" accept="image/*">
-                    </div>
-                    <button type="submit" class="btn btn-primary col-12">Guardar</button>
-                </form>
+                <?php
+                toolForm("herramienta_crear.php", $marcas, $departamentos);
+                ?>
             </div>
         </div>
     </div>
@@ -342,6 +270,7 @@ startTemplate("Herramientas")
 <script src="../js/toggleForm.js"></script>
 <script src="../js/confirmations.js"></script>
 <script src="../js/toggleEdit.js"></script>
+<script src="../js/tool-form-validation.js"></script>
 
 <?php
 endTemplate();

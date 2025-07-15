@@ -1,5 +1,7 @@
 <?php
 require_once "../components/templates/template.php";
+require_once "../components/organisms/productForm.php";
+
 include "../components/navbar.php";
 include "../components/modalNewObject.php";
 
@@ -38,70 +40,9 @@ startTemplate("Editar Producto");
             <div class="card-body">
 
                 <h2 class="text-center">Editar producto</h2>
-                <form method="POST" action="../actions/producto_editar.php" enctype="multipart/form-data">
-                    <input type="hidden" name="id" value="<?= $producto->getId(); ?>">
-
-                    <div class="form-group mb-3">
-                        <label for="description"><b>Descripción</b></label>
-                        <textarea class="form-control" id="description" name="description" rows="3"
-                            placeholder="Ingrese la descripción del producto" required><?= $producto->getDescripcion(); ?></textarea>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="price"><b>Precio</b></label>
-                        <input type="number" class="form-control" id="price" name="price"
-                            placeholder="Ingrese el precio del producto" min="1" step="0.01" value="<?= $producto->getPrecio(); ?>" required>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="measurement"><b>Unidad de medida</b></label>
-                        <div class="row">
-                            <div class="col-10">
-                                <select id="measurement" name="measurement" class="form-control" required>
-                                    <?php foreach ($unidades as $unidad): ?>
-                                        <option <?= ($unidad->getId() === $producto->getUnidadMedida()->getId()) ? 'selected' : ''; ?>
-                                            value="<?= $unidad->getId(); ?>">
-                                            <?= $unidad->getNombre(); ?>
-                                        </option>
-                                    <?php endforeach; ?>
-                                </select>
-                            </div>
-
-                            <div class="col-2">
-                                <button type="button" class="btn btn-primary " data-bs-toggle="modal"
-                                    data-bs-target="#new_unidad">
-                                    <i class="fa fa-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="category"><b>Categoría</b></label>
-
-                        <div class="row">
-                            <div class="col-10">
-                                <select id="category" name="category" class="form-control" required>
-                                    <?php foreach ($categorias as $categoria): ?>
-                                        <option <?= ($categoria->getId() === $producto->getCategoria()->getId()) ? 'selected' : ''; ?>
-                                            value="<?= $categoria->getId(); ?>">
-                                            <?= $categoria->getNombre(); ?>
-                                        </option>
-                                    <?php endforeach; ?>
-                                </select>
-                            </div>
-                            <div class="col-2">
-                                <button type="button" class="btn btn-primary " data-bs-toggle="modal"
-                                    data-bs-target="#new_categoria">
-                                    <i class="fa fa-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="image"><b>Imagen</b></label>
-                        <input type="file" class="form-control-file" id="image" name="image" accept="image/*" value="../<?= $producto->getImgRuta(); ?>">
-                    </div>
-                    <button type="submit" class="btn btn-primary col-12">Guardar</button>
-                </form>
+                <?php
+                productForm("producto_editar.php",$unidades,$categorias,$producto);
+                ?>
             </div>
         </div>
     </div>
@@ -113,5 +54,7 @@ startTemplate("Editar Producto");
     modalNewObject('categoria');
     ?>
 </section>
+
+<script src="../js/product-form-validation.js"></script>
 <?php
 endTemplate();

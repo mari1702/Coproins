@@ -1,5 +1,6 @@
 <?php
 require_once "../components/templates/template.php";
+require_once "../components/organisms/productForm.php";
 include "../components/navbar.php";
 include "../components/modalShowObjects.php";
 include "../components/modalNewObject.php";
@@ -42,87 +43,9 @@ startTemplate("Productos");
             <div class="card-body">
 
                 <h2 class="text-center">Registrar producto</h2>
-                <form method="POST" action="../actions/producto_crear.php" enctype="multipart/form-data">
-
-                    <div class="form-group mb-3">
-                        <label for="category"><b>Categoría</b></label>
-
-                        <div class="row">
-                            <div class="col-8 col-lg-10">
-                                <select id="category" name="category" class="form-control" required>
-                                    <option disabled selected="">Seleccione categoria</option>
-                                    <?php
-                                    foreach ($categorias as $categoria) {
-                                        echo "
-                                                <option value='" . htmlspecialchars($categoria->getId()) . "'>" . htmlspecialchars($categoria->getNombre())  . "</option>
-                                            ";
-                                    }
-                                    ?>
-                                </select>
-                            </div>
-
-                            <div class="col-4 col-lg-2 align-content-center">
-                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#new_categoria">
-                                    <i class="fa fa-plus"></i>
-                                </button>
-
-                                <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#show_categoria">
-                                    <i class="fa fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group mb-3">
-                        <label for="measurement"><b>Unidad de medida</b></label>
-                        <div class="row">
-                            <div class="col-8 col-lg-10">
-                                <select id="measurement" name="measurement" class="form-control" required>
-                                    <option disabled selected="">Seleccione unidad de medida</option>
-                                    <?php
-                                    foreach ($unidades as $unidad) {
-                                        echo "
-                                                <option value='" . htmlspecialchars($unidad->getId()) . "'>" . htmlspecialchars($unidad->getNombre())  . "</option>
-                                            ";
-                                    }
-                                    ?>
-                                </select>
-                            </div>
-
-                            <div class="col-4 col-lg-2 align-content-center">
-                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#new_unidad">
-                                    <i class="fa fa-plus"></i>
-                                </button>
-
-                                <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#show_unidad">
-                                    <i class="fa fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group mb-3">
-                        <label for="description"><b>Descripción</b></label>
-                        <textarea class="form-control" id="description" name="description" rows="3"
-                            placeholder="Ingrese la descripción del producto" required></textarea>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="price"><b>Precio</b></label>
-                        <input type="number" class="form-control" id="price" name="price"
-                            placeholder="Ingrese el precio del producto" min="0" step="0.01" required>
-                    </div>
-
-
-                    <div class="form-group mb-3">
-                        <label for="image"><b>Imagen</b></label>
-                        <input type="file" class="form-control-file" id="image" name="image" accept="image/*">
-                    </div>
-                    <button type="submit" class="btn btn-primary col-12">Guardar</button>
-                </form>
+                <?php
+                productForm("producto_crear.php",$unidades,$categorias);
+                ?>
             </div>
         </div>
     </div>
