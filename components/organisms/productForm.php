@@ -14,33 +14,40 @@ function productForm($action, $unidades, $categorias, $producto = null)
         <div class="form-group mb-3">
             <label for="description"><b>Descripción</b></label>
             <textarea class="form-control" id="description" name="description" rows="3"
-                      placeholder="Ingrese la descripción del producto" required><?= htmlspecialchars($descripcion) ?></textarea>
+                placeholder="Ingrese la descripción del producto" required><?= htmlspecialchars($descripcion) ?></textarea>
         </div>
 
         <div class="form-group mb-3">
             <label for="price"><b>Precio</b></label>
             <input type="number" class="form-control" id="price" name="price"
-                   placeholder="Ingrese el precio del producto" min="1" step="0.01"
-                   value="<?= htmlspecialchars($precio) ?>" required>
+                placeholder="Ingrese el precio del producto" min="1" step="0.01"
+                value="<?= htmlspecialchars($precio) ?>" required>
         </div>
 
         <div class="form-group mb-3">
             <label for="measurement"><b>Unidad de medida</b></label>
             <div class="row">
-                <div class="col-10">
+                <div class="col-8">
                     <select id="measurement" name="measurement" class="form-control" required>
                         <option disabled <?= is_null($unidadId) ? 'selected' : '' ?>>Seleccione una unidad</option>
                         <?php foreach ($unidades as $unidad): ?>
-                            <option value="<?= $unidad->getId(); ?>" 
-                                    <?= ($unidad->getId() === $unidadId) ? 'selected' : ''; ?>>
+                            <option value="<?= $unidad->getId(); ?>"
+                                <?= ($unidad->getId() === $unidadId) ? 'selected' : ''; ?>>
                                 <?= $unidad->getNombre(); ?>
                             </option>
                         <?php endforeach; ?>
                     </select>
                 </div>
-                <div class="col-2">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#new_unidad">
+
+                <div class="col-4 col-lg-2 align-content-center">
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#new_unidad">
                         <i class="fa fa-plus"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#show_unidad">
+                        <i class="fa fa-eye"></i>
                     </button>
                 </div>
             </div>
@@ -49,20 +56,26 @@ function productForm($action, $unidades, $categorias, $producto = null)
         <div class="form-group mb-3">
             <label for="category"><b>Categoría</b></label>
             <div class="row">
-                <div class="col-10">
+                <div class="col-8">
                     <select id="category" name="category" class="form-control" required>
                         <option disabled <?= is_null($categoriaId) ? 'selected' : '' ?>>Seleccione una categoría</option>
                         <?php foreach ($categorias as $categoria): ?>
                             <option value="<?= $categoria->getId(); ?>"
-                                    <?= ($categoria->getId() === $categoriaId) ? 'selected' : ''; ?>>
+                                <?= ($categoria->getId() === $categoriaId) ? 'selected' : ''; ?>>
                                 <?= $categoria->getNombre(); ?>
                             </option>
                         <?php endforeach; ?>
                     </select>
                 </div>
-                <div class="col-2">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#new_categoria">
+                <div class="col-4 col-lg-2 align-content-center">
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#new_categoria">
                         <i class="fa fa-plus"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#show_categoria">
+                        <i class="fa fa-eye"></i>
                     </button>
                 </div>
             </div>

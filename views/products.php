@@ -1,6 +1,8 @@
 <?php
 require_once "../components/templates/template.php";
 require_once "../components/organisms/productForm.php";
+require_once "../components/organisms/productDetails.php";
+require_once "../components/molecules/modal.php";
 include "../components/navbar.php";
 include "../components/modalShowObjects.php";
 include "../components/modalNewObject.php";
@@ -35,20 +37,11 @@ startTemplate("Productos");
 
     <?php
     alerts(); 
+    startModal("NewProduct","Registrar Producto");
+    productForm("producto_crear.php",$unidades,$categorias);
+    endModal();
     ?>
-
-
-    <div class=" new row justify-content-center  d-none">
-        <div class="card col-sm-11 col-md-7 col-lg-6 shadow p-3 mb-5 bg-white border-0 rounded">
-            <div class="card-body">
-
-                <h2 class="text-center">Registrar producto</h2>
-                <?php
-                productForm("producto_crear.php",$unidades,$categorias);
-                ?>
-            </div>
-        </div>
-    </div>
+            
 
 </section>
 
@@ -63,8 +56,13 @@ startTemplate("Productos");
 
                     <div class="col-lg-2 col-sm-3 mb-3">
                         <div class="input-group">
-                            <button class="btn btn-primary" id="showForm"><i class="fas fa-plus"> </i>
-                                Nuevo</button>
+                            <button class="btn btn-primary" 
+                            type="button" 
+                            data-bs-toggle="modal"       
+                            data-bs-target="#NewProduct">
+                                <i class="fas fa-plus"> </i>
+                                Nuevo
+                            </button>
                         </div>
                     </div>
 
@@ -139,41 +137,16 @@ startTemplate("Productos");
                                                             data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <div class="row">
-
-                                                            <?php if ($producto->getImgRuta()): ?>
-                                                                <div class="col-md-6 col-sm-12 mb-3">
-                                                                    <img src="../<?= $producto->getImgRuta(); ?>"
-                                                                        class="img-fluid rounded" alt="Producto 1">
-                                                                </div>
-                                                            <?php endif ?>
-
-                                                            <div class="<?= ($producto->getImgRuta()) ? 'col-md-6 col-sm-12' : 'col-12' ?>">
-                                                                <h4 class="mb-3"><?= $producto->getDescripcion(); ?></h4>
-
-                                                                <ul class="list-group list-group-flush mb-4">
-                                                                    <li class="list-group-item">
-                                                                        <strong>Unidad de medida:</strong> <?= $producto->getUnidadMedida()->getNombre(); ?>
-                                                                    </li>
-                                                                    <li class="list-group-item">
-                                                                        <strong>Categoría:</strong> <?= $producto->getCategoria()->getNombre(); ?>
-                                                                    </li>
-                                                                    <li class="list-group-item">
-                                                                        <strong>Precio:</strong> <span
-                                                                            class="price-format"><?= $producto->getPrecio(); ?></span>
-                                                                    </li>
-                                                                    <li class="list-group-item">
-                                                                        <strong>ID:</strong> <?= $producto->getId(); ?>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
+                                                        <?php
+                                                        productDetails($producto);
+                                                        ?>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary"
                                                             data-bs-dismiss="modal">Cerrar</button>
                                                         <a href="edit-product.php?id=<?= $producto->getId(); ?>" class="btn btn-primary">Editar
-                                                            Producto</a>
+                                                            Producto
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -284,7 +257,6 @@ startTemplate("Productos");
 
 
 
-<script src="../js/toggleForm.js"></script>
 <script src="../js/confirmations.js"></script>
 <script src="../js/toggleEdit.js"></script>
 

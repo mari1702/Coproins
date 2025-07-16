@@ -19,7 +19,7 @@ function toolForm($action, $brands, $departamentos, $herramienta = null)
         <div class="form-group mb-3">
             <label for="brand"><b>Marca</b></label>
             <div class="row">
-                <div class="col-10">
+                <div class="col-8">
                     <select id="brand" name="brand" class="form-control" required>
                         <option disabled selected value="">Seleccione una marca</option>
                         <?php foreach ($brands as $brand): ?>
@@ -30,9 +30,15 @@ function toolForm($action, $brands, $departamentos, $herramienta = null)
                         <?php endforeach; ?>
                     </select>
                 </div>
-                <div class="col-2">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#new_marca">
+                <div class="col-4 col-lg-2 align-content-center">
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#new_marca">
                         <i class="fa fa-plus"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#show_marca">
+                        <i class="fa fa-eye"></i>
                     </button>
                 </div>
             </div>
@@ -41,7 +47,7 @@ function toolForm($action, $brands, $departamentos, $herramienta = null)
         <div class="form-group mb-3">
             <label for="department"><b>Departamento</b></label>
             <div class="row">
-                <div class="col-10">
+                <div class="col-8">
                     <select id="department" name="department" class="form-control" required>
                         <option disabled selected value="">Seleccione un departamento</option>
                         <?php foreach ($departamentos as $departamento): ?>
@@ -52,9 +58,15 @@ function toolForm($action, $brands, $departamentos, $herramienta = null)
                         <?php endforeach; ?>
                     </select>
                 </div>
-                <div class="col-2">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#new_departamento">
+                <div class="col-4 col-lg-2 align-content-center">
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#new_departamento">
                         <i class="fa fa-plus"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#show_departamento">
+                        <i class="fa fa-eye"></i>
                     </button>
                 </div>
             </div>

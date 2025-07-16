@@ -1,6 +1,7 @@
 <?php
 require_once "../components/templates/template.php";
 require_once "../components/organisms/toolForm.php";
+require_once "../components/molecules/modal.php";
 
 include "../components/navbar.php";
 include "../components/modalShowObjects.php";
@@ -33,20 +34,11 @@ startTemplate("Herramientas")
 
 <section class="container-fluid">
     <?php
-    alerts();
+    alerts(); 
+    startModal("NewTool","Registrar herramienta");
+    toolForm("herramienta_crear.php",$marcas,$departamentos);
+    endModal();
     ?>
-
-    <div class=" new row justify-content-center  d-none">
-        <div class="card col-sm-11 col-md-7 col-lg-6 shadow p-3 mb-5 bg-white border-0 rounded">
-            <div class="card-body">
-
-                <h2 class="text-center">Registrar herramienta</h2>
-                <?php
-                toolForm("herramienta_crear.php", $marcas, $departamentos);
-                ?>
-            </div>
-        </div>
-    </div>
 
 </section>
 
@@ -61,7 +53,11 @@ startTemplate("Herramientas")
 
                     <div class="col-lg-2 col-sm-3 mb-3">
                         <div class="input-group">
-                            <button class="btn btn-primary" id="showForm"><i class="fas fa-plus"> </i>
+                            <button class="btn btn-primary" 
+                            type="button" 
+                            data-bs-toggle="modal"       
+                            data-bs-target="#NewTool">
+                            <i class="fas fa-plus"> </i>
                                 Nuevo</button>
                         </div>
                     </div>
@@ -267,7 +263,6 @@ startTemplate("Herramientas")
 
 
 
-<script src="../js/toggleForm.js"></script>
 <script src="../js/confirmations.js"></script>
 <script src="../js/toggleEdit.js"></script>
 <script src="../js/tool-form-validation.js"></script>
