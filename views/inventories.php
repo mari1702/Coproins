@@ -1,7 +1,7 @@
 <?php
 require_once "../components/templates/template.php";
-include "../components/navbar.php";
-include "../components/alerts.php";
+include "../components/organisms/navbar.php";
+include "../components/organisms/alerts.php";
 
 require_once "../controllers/HerramientaController.php";
 require_once "../controllers/DepartamentoController.php";

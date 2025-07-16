@@ -1,10 +1,10 @@
 <?php
 require_once "../components/templates/template.php";
 require_once "../components/organisms/toolForm.php";
+require_once "../components/organisms/modalNewObject.php";
+require_once "../components/organisms/modalShowObjects.php";
 
-include "../components/navbar.php";
-include "../components/modalNewObject.php";
-
+include "../components/organisms/navbar.php";
 
 require_once '../models/Herramienta.php';
 require_once "../controllers/DepartamentoController.php";
@@ -14,7 +14,7 @@ require_once "../controllers/MarcaController.php";
 
 
 $departamentos = DepartamentoController::listar();
-$brands = MarcaController::listar();
+$marcas = MarcaController::listar();
 
 $herramienta = new Herramienta()->getById($_GET['id']);
 
@@ -42,7 +42,7 @@ startTemplate("Editar Herramienta");
 
                 <h2 class="text-center">Editar herramienta</h2>
                 <?php
-                toolForm("herramienta_editar.php", $brands, $departamentos, $herramienta);
+                toolForm("herramienta_editar.php", $marcas, $departamentos, $herramienta);
                 ?>
             </div>
         </div>
@@ -53,6 +53,13 @@ startTemplate("Editar Herramienta");
     <?php
     modalNewObject('departamento');
     modalNewObject('marca');
+    ?>
+</section>
+
+<section>
+    <?php
+    modalShowObjects('departamento', $departamentos);
+    modalShowObjects('marca', $marcas);
     ?>
 </section>
 

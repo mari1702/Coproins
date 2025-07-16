@@ -93,5 +93,7 @@ function productForm($action, $unidades, $categorias, $producto = null)
 
         <button type="submit" class="btn btn-primary col-12">Guardar</button>
     </form>
+
+
 <?php
 }

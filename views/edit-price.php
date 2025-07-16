@@ -1,6 +1,6 @@
 <?php
 include "../components/templates/template.php";
-include "../components/navbar.php";
+include "../components/organisms/navbar.php";
 
 require_once '../models/Cotizacion.php';
 require_once "../controllers/ProductoController.php";

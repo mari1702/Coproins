@@ -2,8 +2,9 @@
 require_once "../components/templates/template.php";
 require_once "../components/organisms/productForm.php";
 
-include "../components/navbar.php";
-include "../components/modalNewObject.php";
+include "../components/organisms/navbar.php";
+include "../components/organisms/modalNewObject.php";
+include "../components/organisms/modalShowObjects.php";
 
 
 require_once '../models/Producto.php';
@@ -52,6 +53,13 @@ startTemplate("Editar Producto");
     <?php
     modalNewObject('unidad');
     modalNewObject('categoria');
+    ?>
+</section>
+
+<section>
+    <?php
+    modalShowObjects('unidad', $unidades);
+    modalShowObjects('categoria', $categorias);
     ?>
 </section>
 

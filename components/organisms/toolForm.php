@@ -1,4 +1,5 @@
 <?php
+
 function toolForm($action, $brands, $departamentos, $herramienta = null)
 {
     $id = $herramienta ? $herramienta->getId() : '';

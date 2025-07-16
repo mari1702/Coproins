@@ -1,12 +1,12 @@
 <?php
 require_once "../components/templates/template.php";
 require_once "../components/organisms/toolForm.php";
+require_once "../components/organisms/modalNewObject.php";
+require_once "../components/organisms/modalShowObjects.php";
 require_once "../components/molecules/modal.php";
 
-include "../components/navbar.php";
-include "../components/modalShowObjects.php";
-include "../components/modalNewObject.php";
-include "../components/alerts.php";
+include "../components/organisms/navbar.php";
+include "../components/organisms/alerts.php";
 
 require_once "../controllers/DepartamentoController.php";
 require_once "../controllers/MarcaController.php";
@@ -25,7 +25,6 @@ startTemplate("Herramientas")
 
 
 <header>
-    <!-- Navbar -->
     <?php
     navBar('herramientas');
     ?>
@@ -39,7 +38,6 @@ startTemplate("Herramientas")
     toolForm("herramienta_crear.php",$marcas,$departamentos);
     endModal();
     ?>
-
 </section>
 
 
@@ -216,6 +214,7 @@ startTemplate("Herramientas")
     modalShowObjects('marca', $marcas);
     ?>
 </section>
+
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         // Elementos del DOM

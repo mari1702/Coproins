@@ -2,13 +2,12 @@
 require_once "../components/templates/template.php";
 require_once "../components/organisms/productForm.php";
 require_once "../components/organisms/productDetails.php";
+require_once "../components/organisms/modalNewObject.php";
+require_once "../components/organisms/modalShowObjects.php";
 require_once "../components/molecules/modal.php";
-include "../components/navbar.php";
-include "../components/modalShowObjects.php";
-include "../components/modalNewObject.php";
-include "../components/alerts.php";
 
-
+include "../components/organisms/navbar.php";
+include "../components/organisms/alerts.php";
 
 
 require_once "../controllers/CategoriaController.php";
@@ -197,6 +196,9 @@ startTemplate("Productos");
     modalShowObjects('categoria', $categorias);
     ?>
 </section>
+
+
+
 <script>
     function formatPrices() {
         document.querySelectorAll('.price-format').forEach(element => {
