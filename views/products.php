@@ -53,7 +53,7 @@ startTemplate("Productos");
                 <!-- Filtros y búsqueda -->
                 <div class="row mb-4">
 
-                    <div class="col-lg-2 col-sm-3 mb-3">
+                    <div class="col-4 col-lg-2 col-sm-3 mb-3">
                         <div class="input-group">
                             <button class="btn btn-primary"
                                 type="button"
@@ -66,7 +66,7 @@ startTemplate("Productos");
                     </div>
 
 
-                    <div class="col-lg-4 col-sm-9 mb-3">
+                    <div class="col-8 col-lg-4 col-sm-9 mb-3">
                         <div class="input-group">
                             <span class="input-group-text bg-primary text-white">
                                 <i class="fas fa-filter"></i>

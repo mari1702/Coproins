@@ -34,16 +34,13 @@ startTemplate("Inventarios");
             <div class="card-header bg-white">
                 <h3 class="text-center">Nuevo Inventario</h3>
             </div>
-            <div class="card-body">
 
+            <div class="card-body">
                 <div class="mb-3">
                     <input type="text" class="form-control" id="ubicacion" placeholder="Ubicación">
                 </div>
 
-
-
                 <div id="tools-container">
-
                     <div class="row">
                         <div class="col-12">
                             <button class="btn btn-primary w-100"
@@ -53,16 +50,8 @@ startTemplate("Inventarios");
                                 <i class="fa fa-plus"></i>
                             </button>
                         </div>
-
                     </div>
-
                 </div>
-
-
-
-
-
-
             </div>
         </div>
     </div>
@@ -78,14 +67,14 @@ startTemplate("Inventarios");
 
                 <div class="row mb-4">
 
-                    <div class="col-lg-2 col-sm-3 mb-3">
+                    <div class="col-4 col-lg-2 col-sm-3 mb-3">
                         <div class="input-group">
                             <button class="btn btn-primary" id="showForm"><i class="fas fa-plus"> </i>
                                 Nuevo</button>
                         </div>
                     </div>
 
-                    <div class="col-lg-10 col-sm-9 mb-3">
+                    <div class="col-8 col-lg-10 col-sm-9 mb-3">
                         <div class="input-group">
                             <span class="input-group-text bg-primary text-white">
                                 <i class="fas fa-search"></i>

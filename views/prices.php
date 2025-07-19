@@ -88,7 +88,7 @@ startTemplate("Cotizaciones");
 
                 <div class="row mb-4">
 
-                    <div class="col-lg-2 col-sm-3 mb-3">
+                    <div class="col-4 col-lg-2 col-sm-3 mb-3">
                         <div class="input-group">
                             <button class="btn btn-primary" id="showForm"><i class="fas fa-plus"> </i>
                                 Nuevo</button>
@@ -96,7 +96,7 @@ startTemplate("Cotizaciones");
                     </div>
 
 
-                    <div class="col-lg-4 col-sm-9 mb-3">
+                    <div class="col-8 col-lg-4 col-sm-9 mb-3">
                         <div class="input-group">
                             <span class="input-group-text bg-primary text-white">
                                 <i class="fas fa-filter"></i>
