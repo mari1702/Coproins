@@ -35,12 +35,12 @@ startTemplate("Productos");
 <section class="container-fluid">
 
     <?php
-    alerts(); 
-    startModal("NewProduct","Registrar Producto");
-    productForm("producto_crear.php",$unidades,$categorias);
+    alerts();
+    startModal("NewProduct", "Registrar Producto");
+    productForm("producto_crear.php", $unidades, $categorias);
     endModal();
     ?>
-            
+
 
 </section>
 
@@ -55,10 +55,10 @@ startTemplate("Productos");
 
                     <div class="col-lg-2 col-sm-3 mb-3">
                         <div class="input-group">
-                            <button class="btn btn-primary" 
-                            type="button" 
-                            data-bs-toggle="modal"       
-                            data-bs-target="#NewProduct">
+                            <button class="btn btn-primary"
+                                type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#NewProduct">
                                 <i class="fas fa-plus"> </i>
                                 Nuevo
                             </button>
@@ -125,32 +125,11 @@ startTemplate("Productos");
                                             <i class="fas fa-eye"></i>
                                         </button>
 
-                                        <div class="modal fade" id="<?= $producto->getId(); ?>" tabindex="-1"
-                                            aria-labelledby="modal<?= $producto->getId(); ?>Label" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                                <div class="modal-content">
-                                                    <div class="modal-header bg-primary text-white">
-                                                        <h5 class="modal-title" id="modal<?= $producto->getId(); ?>Label">Detalles del
-                                                            Producto</h5>
-                                                        <button type="button" class="btn-close btn-close-white"
-                                                            data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <?php
-                                                        productDetails($producto);
-                                                        ?>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary"
-                                                            data-bs-dismiss="modal">Cerrar</button>
-                                                        <a href="edit-product.php?id=<?= $producto->getId(); ?>" class="btn btn-primary">Editar
-                                                            Producto
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
+                                        <?php
+                                        startModal($producto->getId(), "Detalles del producto");
+                                        productdetails($producto);
+                                        endModal();
+                                        ?>
 
                                         <!-- Editar -->
                                         <a href="edit-product.php?id=<?= $producto->getId(); ?>" class="btn btn-primary btn-sm" title="Editar"

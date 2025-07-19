@@ -73,12 +73,6 @@ startTemplate("Cotizaciones");
                     </div>
 
                 </div>
-
-
-
-
-
-
             </div>
         </div>
     </div>

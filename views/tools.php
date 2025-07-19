@@ -33,9 +33,9 @@ startTemplate("Herramientas")
 
 <section class="container-fluid">
     <?php
-    alerts(); 
-    startModal("NewTool","Registrar herramienta");
-    toolForm("herramienta_crear.php",$marcas,$departamentos);
+    alerts();
+    startModal("NewTool", "Registrar herramienta");
+    toolForm("herramienta_crear.php", $marcas, $departamentos);
     endModal();
     ?>
 </section>
@@ -51,11 +51,11 @@ startTemplate("Herramientas")
 
                     <div class="col-lg-2 col-sm-3 mb-3">
                         <div class="input-group">
-                            <button class="btn btn-primary" 
-                            type="button" 
-                            data-bs-toggle="modal"       
-                            data-bs-target="#NewTool">
-                            <i class="fas fa-plus"> </i>
+                            <button class="btn btn-primary"
+                                type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#NewTool">
+                                <i class="fas fa-plus"> </i>
                                 Nuevo</button>
                         </div>
                     </div>
@@ -120,54 +120,42 @@ startTemplate("Herramientas")
                                             <i class="fas fa-eye"></i>
                                         </button>
 
-                                        <div class="modal fade" id="<?= $herramienta->getId(); ?>" tabindex="-1"
-                                            aria-labelledby="modal<?= $herramienta->getId(); ?>Label" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                                <div class="modal-content">
-                                                    <div class="modal-header bg-primary text-white">
-                                                        <h5 class="modal-title" id="modal<?= $herramienta->getId(); ?>Label">
-                                                            Detalles de la herramienta
-                                                        </h5>
-                                                        <button type="button" class="btn-close btn-close-white"
-                                                            data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="row">
+                                        <?php
+                                        startModal($herramienta->getId(), "Detalles de la herramienta")
+                                        ?>
 
-                                                            <?php if ($herramienta->getImgRuta()): ?>
-                                                                <div class="col-md-6 col-sm-12 mb-3">
-                                                                    <img src="../<?= $herramienta->getImgRuta(); ?>"
-                                                                        class="img-fluid rounded" alt="Producto 1">
-                                                                </div>
-                                                            <?php endif ?>
+                                        <div class="row">
 
-                                                            <div class="<?= ($herramienta->getImgRuta()) ? 'col-md-6 col-sm-12' : 'col-12' ?>">
-                                                                <h4 class="mb-3"><?= $herramienta->getDescripcion(); ?></h4>
-
-                                                                <ul class="list-group list-group-flush mb-4">
-                                                                    <li class="list-group-item">
-                                                                        <strong>Departamento:</strong> <?= $herramienta->getDepartamento()->getNombre(); ?>
-                                                                    </li>
-                                                                    <li class="list-group-item">
-                                                                        <strong>Precio:</strong> <span
-                                                                            class="price-format"><?= $herramienta->getMarca()->getNombre(); ?></span>
-                                                                    </li>
-                                                                    <li class="list-group-item">
-                                                                        <strong>ID:</strong> <?= $herramienta->getId(); ?>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary"
-                                                            data-bs-dismiss="modal">Cerrar</button>
-                                                        <a href="edit-tool.php?id=<?= $herramienta->getId(); ?>" class="btn btn-primary">Editar
-                                                            Herramienta</a>
-                                                    </div>
+                                            <?php if ($herramienta->getImgRuta()): ?>
+                                                <div class="col-md-6 col-sm-12 mb-3">
+                                                    <img src="../<?= $herramienta->getImgRuta(); ?>"
+                                                        class="img-fluid rounded" alt="Producto 1">
                                                 </div>
+                                            <?php endif ?>
+
+                                            <div class="<?= ($herramienta->getImgRuta()) ? 'col-md-6 col-sm-12' : 'col-12' ?>">
+                                                <h4 class="mb-3"><?= $herramienta->getDescripcion(); ?></h4>
+
+                                                <ul class="list-group list-group-flush mb-4">
+                                                    <li class="list-group-item">
+                                                        <strong>Departamento:</strong> <?= $herramienta->getDepartamento()->getNombre(); ?>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <strong>Precio:</strong> <span
+                                                            class="price-format"><?= $herramienta->getMarca()->getNombre(); ?></span>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <strong>ID:</strong> <?= $herramienta->getId(); ?>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
+
+                                        <?php
+                                        endModal();
+                                        ?>
+
+
 
 
                                         <!-- Editar -->
