@@ -127,7 +127,7 @@ startTemplate("Productos");
 
                                         <?php
                                         startModal($producto->getId(), "Detalles del producto");
-                                        productdetails($producto);
+                                        productDetails($producto);
                                         endModal();
                                         ?>
 

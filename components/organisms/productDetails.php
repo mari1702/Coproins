@@ -1,5 +1,5 @@
 <?php
-function productdetails($producto)
+function productDetails($producto)
 {
 ?>
     <div class="row">

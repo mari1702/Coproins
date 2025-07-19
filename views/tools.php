@@ -3,6 +3,7 @@ require_once "../components/templates/template.php";
 require_once "../components/organisms/toolForm.php";
 require_once "../components/organisms/modalNewObject.php";
 require_once "../components/organisms/modalShowObjects.php";
+require_once "../components/organisms/toolDetails.php";
 require_once "../components/molecules/modal.php";
 
 include "../components/organisms/navbar.php";
@@ -121,42 +122,10 @@ startTemplate("Herramientas")
                                         </button>
 
                                         <?php
-                                        startModal($herramienta->getId(), "Detalles de la herramienta")
-                                        ?>
-
-                                        <div class="row">
-
-                                            <?php if ($herramienta->getImgRuta()): ?>
-                                                <div class="col-md-6 col-sm-12 mb-3">
-                                                    <img src="../<?= $herramienta->getImgRuta(); ?>"
-                                                        class="img-fluid rounded" alt="Producto 1">
-                                                </div>
-                                            <?php endif ?>
-
-                                            <div class="<?= ($herramienta->getImgRuta()) ? 'col-md-6 col-sm-12' : 'col-12' ?>">
-                                                <h4 class="mb-3"><?= $herramienta->getDescripcion(); ?></h4>
-
-                                                <ul class="list-group list-group-flush mb-4">
-                                                    <li class="list-group-item">
-                                                        <strong>Departamento:</strong> <?= $herramienta->getDepartamento()->getNombre(); ?>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <strong>Precio:</strong> <span
-                                                            class="price-format"><?= $herramienta->getMarca()->getNombre(); ?></span>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <strong>ID:</strong> <?= $herramienta->getId(); ?>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                        <?php
+                                        startModal($herramienta->getId(), "Detalles de la herramienta");
+                                        toolDetails($herramienta);
                                         endModal();
                                         ?>
-
-
-
 
                                         <!-- Editar -->
                                         <a href="edit-tool.php?id=<?= $herramienta->getId(); ?>" class="btn btn-primary btn-sm" title="Editar"
