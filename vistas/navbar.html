@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegación</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles2.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+        }
+
+        /* Estilos de la barra de navegación */
+        .navbar {
+            background-color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center; /* Centra el contenido */
+            align-items: center;
+            border-bottom: 3px solid black; /* Contorno oscuro solo por debajo */
+        }
+
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px; /* Espaciado entre elementos */
+        }
+
+        .nav-list li {
+            margin: 0;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: gray;
+        }
+
+        .logout-icon {
+            color: black;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        .logout-icon:hover {
+            color: gray;
+        }
+
+        /* Botón del menú hamburguesa */
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            color: black;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .navbar {
+                justify-content: space-between; /* Espacio entre logo y menú */
+                padding: 10px 20px;
+            }
+
+            .nav-list {
+                display: none;
+                flex-direction: column;
+                background-color: white;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                padding: 10px 0;
+                border-bottom: 3px solid black;
+                text-align: center;
+            }
+
+            .nav-list li {
+                margin: 10px 0;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-list.active {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <button class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-list" id="nav-list">
+            <li><a href="proyectos_habilitados.php" class="nav-link">Proyectos Habilitados</a></li>
+            <li><a href="proyecto.php" class="nav-link">Proyecto</a></li>
+            <li><a href="gastos.php" class="nav-link">Gastos</a></li>
+            <li><a href="nuevo_usuario.php" class="nav-link">Nuevo Usuario</a></li>
+            <li>
+                <a href="../bd/logout.php" class="logout-icon">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script>
+        // Seleccionamos los elementos
+        const menuToggle = document.getElementById("menu-toggle");
+        const navList = document.getElementById("nav-list");
+
+        // Agregamos el evento click para mostrar u ocultar el menú
+        menuToggle.addEventListener("click", () => {
+            navList.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>

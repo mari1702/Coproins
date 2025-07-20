@@ -1,0 +1,631 @@
+[26-Feb-2025 10:31:03 America/Mexico_City] Error en login.php: Contraseña incorrecta.
+[28-Feb-2025 09:36:34 America/Mexico_City] Error en login.php: Usuario no encontrado.
+[28-Feb-2025 09:36:47 America/Mexico_City] Error en login.php: Usuario no encontrado.
+[28-Feb-2025 09:38:54 America/Mexico_City] Error en login.php: Usuario no encontrado.
+[28-Feb-2025 09:39:01 America/Mexico_City] Error en login.php: Usuario no encontrado.
+[28-Feb-2025 09:39:06 America/Mexico_City] Error en login.php: Usuario no encontrado.
+[28-Feb-2025 10:09:38 America/Mexico_City] Error en login.php: Usuario no encontrado.
+[28-Feb-2025 10:10:06 America/Mexico_City] Error en login.php: Usuario no encontrado.
+[03-Mar-2025 10:44:28 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 10:44:28 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 10:44:28 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 10:44:28 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 10:44:28 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 10:44:28 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 10:44:28 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 10:44:28 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 10:44:33 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 10:44:33 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 10:44:33 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 10:44:33 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 10:44:33 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 10:44:33 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 10:44:33 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 10:44:33 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 11:40:15 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 11:40:15 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 11:40:15 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 11:40:15 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 11:40:16 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 11:40:16 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 11:40:16 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 11:40:16 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 11:51:53 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 11:51:53 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 11:51:53 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 11:51:53 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 11:51:53 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 11:51:53 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 11:51:53 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 11:51:53 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 12:40:35 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 12:40:35 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 12:40:35 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 12:40:35 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 12:41:59 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 12:41:59 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 12:41:59 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 12:41:59 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 12:41:59 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 12:41:59 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 12:41:59 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 12:41:59 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 13:10:23 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 13:10:23 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 13:10:23 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 13:10:23 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 13:10:23 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 13:10:23 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 13:10:23 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 13:10:23 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 13:12:24 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 13:12:24 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 13:12:24 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 13:12:24 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 13:12:24 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 13:12:24 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 13:12:24 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 13:12:24 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 13:14:03 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 13:14:03 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 13:14:03 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 13:14:03 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 13:14:04 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 13:14:04 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 13:14:04 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 13:14:04 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 13:15:18 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 13:15:18 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 13:15:18 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 13:15:18 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 13:15:18 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 13:15:18 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 13:15:18 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 13:15:18 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 13:18:28 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 13:18:28 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 13:18:28 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 13:18:28 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 13:18:28 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 13:18:28 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 13:18:28 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 13:18:28 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 14:48:33 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 14:48:33 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 14:48:33 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 14:48:33 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 14:48:33 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 14:48:33 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 14:48:33 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 14:48:33 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 14:48:49 America/Mexico_City] PHP Warning:  Constant DB_HOST already defined in /home/conproin/gastos.conproins.com/bd/db_conexion.php on line 4
+[03-Mar-2025 14:48:49 America/Mexico_City] PHP Warning:  Constant DB_NAME already defined in /home/conproin/gastos.conproins.com/bd/db_conexion.php on line 5
+[03-Mar-2025 14:48:49 America/Mexico_City] PHP Warning:  Constant DB_USER already defined in /home/conproin/gastos.conproins.com/bd/db_conexion.php on line 6
+[03-Mar-2025 14:48:49 America/Mexico_City] PHP Warning:  Constant DB_PASS already defined in /home/conproin/gastos.conproins.com/bd/db_conexion.php on line 7
+[03-Mar-2025 14:48:58 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 14:48:58 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 14:48:58 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 14:48:58 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 14:48:59 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 14:48:59 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 14:48:59 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 14:48:59 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 14:49:17 America/Mexico_City] PHP Warning:  Constant DB_HOST already defined in /home/conproin/gastos.conproins.com/bd/db_conexion.php on line 4
+[03-Mar-2025 14:49:17 America/Mexico_City] PHP Warning:  Constant DB_NAME already defined in /home/conproin/gastos.conproins.com/bd/db_conexion.php on line 5
+[03-Mar-2025 14:49:17 America/Mexico_City] PHP Warning:  Constant DB_USER already defined in /home/conproin/gastos.conproins.com/bd/db_conexion.php on line 6
+[03-Mar-2025 14:49:17 America/Mexico_City] PHP Warning:  Constant DB_PASS already defined in /home/conproin/gastos.conproins.com/bd/db_conexion.php on line 7
+[03-Mar-2025 14:49:29 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 14:49:29 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 14:49:29 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 14:49:29 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 14:49:29 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 14:49:29 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 14:49:29 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 14:49:29 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 14:49:40 America/Mexico_City] PHP Warning:  Constant DB_HOST already defined in /home/conproin/gastos.conproins.com/bd/db_conexion.php on line 4
+[03-Mar-2025 14:49:40 America/Mexico_City] PHP Warning:  Constant DB_NAME already defined in /home/conproin/gastos.conproins.com/bd/db_conexion.php on line 5
+[03-Mar-2025 14:49:40 America/Mexico_City] PHP Warning:  Constant DB_USER already defined in /home/conproin/gastos.conproins.com/bd/db_conexion.php on line 6
+[03-Mar-2025 14:49:40 America/Mexico_City] PHP Warning:  Constant DB_PASS already defined in /home/conproin/gastos.conproins.com/bd/db_conexion.php on line 7
+[03-Mar-2025 14:49:55 America/Mexico_City] PHP Warning:  Constant DB_HOST already defined in /home/conproin/gastos.conproins.com/bd/db_conexion.php on line 4
+[03-Mar-2025 14:49:55 America/Mexico_City] PHP Warning:  Constant DB_NAME already defined in /home/conproin/gastos.conproins.com/bd/db_conexion.php on line 5
+[03-Mar-2025 14:49:55 America/Mexico_City] PHP Warning:  Constant DB_USER already defined in /home/conproin/gastos.conproins.com/bd/db_conexion.php on line 6
+[03-Mar-2025 14:49:55 America/Mexico_City] PHP Warning:  Constant DB_PASS already defined in /home/conproin/gastos.conproins.com/bd/db_conexion.php on line 7
+[03-Mar-2025 15:34:19 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 15:34:19 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 15:34:19 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 15:34:19 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 15:51:29 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 15:51:29 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 15:51:29 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 15:51:29 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 15:51:29 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 15:51:29 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 15:51:29 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 15:51:29 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 15:51:42 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 15:51:42 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 15:51:42 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 15:51:42 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 15:51:42 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 15:51:42 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Mar-2025 15:51:42 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Mar-2025 15:51:42 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 11:12:11 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 11:12:11 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 11:12:11 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 11:12:11 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 11:12:11 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 11:12:11 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 11:12:11 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 11:12:11 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 11:31:01 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 11:31:01 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 11:31:01 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 11:31:01 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 11:31:01 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 11:31:01 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 11:31:01 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 11:31:01 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 11:32:34 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 11:32:34 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 11:32:34 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 11:32:34 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 11:39:54 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 11:39:54 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 11:39:54 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 11:39:54 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 11:39:55 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 11:39:55 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 11:39:55 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 11:39:55 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 13:45:25 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 13:45:25 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 13:45:25 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 13:45:25 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 13:45:25 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 13:45:25 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 13:45:25 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 13:45:25 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 13:45:53 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 13:45:53 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 13:45:53 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 13:45:53 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 13:49:28 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 13:49:28 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 13:49:28 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 13:49:28 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 13:49:29 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 13:49:29 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 13:49:29 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 13:49:29 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 13:58:03 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 13:58:03 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 13:58:03 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 13:58:03 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 13:58:18 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 13:58:18 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 13:58:18 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 13:58:18 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 13:58:18 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 13:58:18 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 13:58:18 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 13:58:18 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 14:03:01 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 14:03:01 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 14:03:01 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 14:03:01 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 14:03:01 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 14:03:01 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 14:03:01 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 14:03:01 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 14:03:19 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 14:03:19 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 14:03:19 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 14:03:19 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 14:03:19 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 14:03:19 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 14:03:19 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 14:03:19 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 14:11:49 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 14:11:49 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 14:11:49 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 14:11:49 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 14:11:49 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 14:11:49 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[04-Mar-2025 14:11:49 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Mar-2025 14:11:49 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[05-Mar-2025 14:03:15 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[05-Mar-2025 14:03:15 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[05-Mar-2025 14:03:15 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[05-Mar-2025 14:03:15 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[05-Mar-2025 14:03:15 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[05-Mar-2025 14:03:15 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[05-Mar-2025 14:03:15 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[05-Mar-2025 14:03:15 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 12:55:20 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 12:55:20 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 12:55:20 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 12:55:20 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 12:55:20 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 12:55:20 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 12:55:20 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 12:55:20 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 12:59:41 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 12:59:41 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 12:59:41 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/conproin/gastos.conproins.com/php/reporte_cliente.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:00:13 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:00:13 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:00:13 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/conproin/gastos.conproins.com/php/reporte_cliente.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:00:47 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:00:47 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:00:47 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/conproin/gastos.conproins.com/php/reporte_cliente.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:01:14 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:01:14 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:01:14 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/conproin/gastos.conproins.com/php/reporte_cliente.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:01:26 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:01:26 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:01:26 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/conproin/gastos.conproins.com/php/reporte_cliente.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:01:29 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:01:29 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:01:29 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/conproin/gastos.conproins.com/php/reporte_cliente.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:01:36 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:01:36 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:01:36 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/conproin/gastos.conproins.com/php/reporte_cliente.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:02:28 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 13:02:28 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 13:02:28 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 13:02:28 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 13:02:28 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 13:02:28 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 13:02:28 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 13:02:28 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 13:03:34 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 13:03:34 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 13:03:34 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 13:03:34 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 13:03:34 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 13:03:34 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 13:03:34 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 13:03:34 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 13:04:08 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:04:08 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:04:08 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/conproin/gastos.conproins.com/php/reporte_cliente.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:04:58 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:04:58 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 13:04:58 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/conproin/gastos.conproins.com/php/reporte_cliente.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 15:43:41 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 15:43:41 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 15:43:41 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/conproin/gastos.conproins.com/php/reporte_cliente.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 15:43:44 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 15:43:44 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 15:43:44 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/conproin/gastos.conproins.com/php/reporte_cliente.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 15:44:47 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 15:44:47 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 15:44:47 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/conproin/gastos.conproins.com/php/reporte_cliente.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 3
+[06-Mar-2025 15:46:43 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 7
+[06-Mar-2025 15:46:43 America/Mexico_City] PHP Warning:  require(../vendor/autoload.php): Failed to open stream: No such file or directory in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 7
+[06-Mar-2025 15:46:43 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/conproin/gastos.conproins.com/php/reporte_cliente.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 7
+[06-Mar-2025 16:02:15 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 16:02:15 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 16:02:15 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 16:02:15 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 16:02:15 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 16:02:15 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 16:02:15 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 16:02:15 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 16:06:17 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 16:06:17 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 16:06:17 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 16:06:17 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 16:06:17 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 16:06:17 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 16:06:17 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 16:06:17 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 16:07:18 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 16:07:18 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 16:07:18 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 16:07:18 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 16:07:18 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 16:07:18 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 16:07:18 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 16:07:18 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 16:08:41 America/Mexico_City] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/conproin/gastos.conproins.com/php/reporte_cliente.php on line 101
+[06-Mar-2025 16:13:01 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 16:13:01 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 16:13:01 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 16:13:01 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 16:13:02 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 16:13:02 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[06-Mar-2025 16:13:02 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[06-Mar-2025 16:13:02 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[11-Mar-2025 20:39:23 America/Mexico_City] Error en login.php: Contraseña incorrecta.
+[18-Mar-2025 13:27:02 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[18-Mar-2025 13:27:02 America/Mexico_City] Error en login.php: Contraseña incorrecta.
+[18-Mar-2025 13:27:11 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[18-Mar-2025 13:27:11 America/Mexico_City] Error en login.php: Contraseña incorrecta.
+[18-Mar-2025 13:27:38 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[18-Mar-2025 13:27:38 America/Mexico_City] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/conproin/gastos.conproins.com/php/login.php on line 29
+[18-Mar-2025 13:27:38 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/conproin/gastos.conproins.com/php/login.php:29) in /home/conproin/gastos.conproins.com/php/login.php on line 36
+[18-Mar-2025 13:28:24 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[18-Mar-2025 13:28:24 America/Mexico_City] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/conproin/gastos.conproins.com/php/login.php on line 29
+[18-Mar-2025 13:28:24 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/conproin/gastos.conproins.com/php/login.php:29) in /home/conproin/gastos.conproins.com/php/login.php on line 36
+[18-Mar-2025 13:30:50 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[18-Mar-2025 13:34:17 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[18-Mar-2025 13:35:10 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[18-Mar-2025 13:35:25 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[18-Mar-2025 13:37:32 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[20-Mar-2025 11:18:18 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[20-Mar-2025 11:18:18 America/Mexico_City] Error en login.php: Usuario no encontrado.
+[20-Mar-2025 11:18:39 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[20-Mar-2025 11:18:39 America/Mexico_City] Error en login.php: Usuario no encontrado.
+[20-Mar-2025 11:19:22 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[20-Mar-2025 11:19:22 America/Mexico_City] Error en login.php: Usuario no encontrado.
+[20-Mar-2025 11:19:38 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[20-Mar-2025 12:00:18 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[20-Mar-2025 12:00:18 America/Mexico_City] Error en login.php: Usuario no encontrado.
+[20-Mar-2025 12:45:36 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[20-Mar-2025 12:46:23 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[20-Mar-2025 13:14:50 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[20-Mar-2025 13:15:50 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[20-Mar-2025 13:30:47 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[20-Mar-2025 13:35:31 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[20-Mar-2025 13:55:04 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[20-Mar-2025 13:55:04 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[20-Mar-2025 13:55:04 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[20-Mar-2025 13:55:04 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[20-Mar-2025 13:55:04 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[20-Mar-2025 13:55:04 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[20-Mar-2025 13:55:04 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[20-Mar-2025 13:55:04 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[20-Mar-2025 15:23:54 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[20-Mar-2025 15:25:00 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[20-Mar-2025 15:25:00 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[20-Mar-2025 15:25:00 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[20-Mar-2025 15:25:00 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[20-Mar-2025 15:25:00 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[20-Mar-2025 15:25:00 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[20-Mar-2025 15:25:00 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[20-Mar-2025 15:25:00 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[20-Mar-2025 15:25:43 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[20-Mar-2025 15:25:43 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[20-Mar-2025 15:25:43 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[20-Mar-2025 15:25:43 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[20-Mar-2025 16:01:56 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[24-Mar-2025 15:16:09 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[24-Mar-2025 16:01:24 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[24-Mar-2025 16:02:59 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[24-Mar-2025 16:05:28 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[24-Mar-2025 16:07:37 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[24-Mar-2025 16:07:37 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[24-Mar-2025 16:07:37 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[24-Mar-2025 16:07:37 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[24-Mar-2025 16:19:38 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[24-Mar-2025 16:23:40 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[24-Mar-2025 16:23:40 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[24-Mar-2025 16:23:40 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[24-Mar-2025 16:23:40 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[24-Mar-2025 16:25:57 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[24-Mar-2025 16:25:57 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[24-Mar-2025 16:25:57 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[24-Mar-2025 16:25:57 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[24-Mar-2025 16:25:57 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[24-Mar-2025 16:25:57 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[24-Mar-2025 16:25:57 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[24-Mar-2025 16:25:57 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[24-Mar-2025 16:26:00 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[24-Mar-2025 16:26:00 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[24-Mar-2025 16:26:00 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[24-Mar-2025 16:26:00 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[24-Mar-2025 16:31:21 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[24-Mar-2025 16:31:21 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[24-Mar-2025 16:31:21 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[24-Mar-2025 16:31:21 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[25-Mar-2025 12:04:13 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[26-Mar-2025 15:41:13 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[26-Mar-2025 15:43:28 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[26-Mar-2025 15:56:39 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[26-Mar-2025 15:57:30 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[26-Mar-2025 16:31:13 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[28-Mar-2025 12:31:30 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[28-Mar-2025 17:07:53 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[28-Mar-2025 17:10:18 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/conproin/gastos.conproins.com/php/finalizar_activar_proyecto.php:17) in /home/conproin/gastos.conproins.com/php/finalizar_activar_proyecto.php on line 31
+[28-Mar-2025 17:12:02 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/conproin/gastos.conproins.com/php/finalizar_activar_proyecto.php:17) in /home/conproin/gastos.conproins.com/php/finalizar_activar_proyecto.php on line 31
+[28-Mar-2025 17:20:05 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[31-Mar-2025 10:28:09 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[31-Mar-2025 10:28:11 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[31-Mar-2025 10:28:30 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 10:28:30 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 10:28:30 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 10:28:30 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 11:04:50 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[31-Mar-2025 11:43:20 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[31-Mar-2025 18:20:24 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[31-Mar-2025 18:30:52 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:30:52 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:30:52 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:30:52 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:30:52 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:30:52 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:30:52 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:30:52 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:31:49 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:31:49 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:31:49 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:31:49 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:32:34 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:32:34 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:32:34 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:32:34 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:32:34 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:32:34 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:32:34 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:32:34 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:33:10 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:33:10 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:33:10 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:33:10 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:33:38 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:33:38 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:33:38 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:33:38 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:33:38 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:33:38 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:33:38 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:33:38 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:46:42 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:46:42 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:46:42 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:46:42 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:46:42 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:46:42 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:46:42 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:46:42 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:47:12 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[31-Mar-2025 18:58:01 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:58:01 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:58:01 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:58:01 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:58:01 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:58:01 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[31-Mar-2025 18:58:01 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 18:58:01 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[31-Mar-2025 20:19:00 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[31-Mar-2025 20:27:04 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[01-Apr-2025 10:52:30 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[01-Apr-2025 10:53:28 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[01-Apr-2025 10:53:28 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[01-Apr-2025 10:53:28 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[01-Apr-2025 10:53:28 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[01-Apr-2025 10:53:28 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[01-Apr-2025 10:53:28 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[01-Apr-2025 10:53:28 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[01-Apr-2025 10:53:28 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[01-Apr-2025 11:26:23 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[01-Apr-2025 12:19:24 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[01-Apr-2025 18:54:20 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[01-Apr-2025 18:55:24 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[01-Apr-2025 21:47:18 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[02-Apr-2025 10:52:08 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[02-Apr-2025 16:48:59 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[02-Apr-2025 17:41:52 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[02-Apr-2025 21:47:23 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[03-Apr-2025 10:38:05 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[03-Apr-2025 11:57:58 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[03-Apr-2025 14:57:11 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[03-Apr-2025 15:12:45 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Apr-2025 15:12:45 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Apr-2025 15:12:45 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Apr-2025 15:12:45 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Apr-2025 15:12:45 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Apr-2025 15:12:45 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[03-Apr-2025 15:12:45 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[03-Apr-2025 15:12:45 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[04-Apr-2025 17:10:43 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[07-Apr-2025 10:05:00 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[09-Apr-2025 10:27:58 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[11-Apr-2025 08:48:22 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[11-Apr-2025 12:24:21 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[15-Apr-2025 18:08:45 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[17-Apr-2025 12:52:19 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[18-Apr-2025 19:13:37 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[18-Apr-2025 19:13:37 America/Mexico_City] Error en login.php: Contraseña incorrecta.
+[18-Apr-2025 19:13:51 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[18-Apr-2025 19:13:52 America/Mexico_City] Error en login.php: Contraseña incorrecta.
+[18-Apr-2025 19:14:18 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[21-Apr-2025 16:58:08 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[21-Apr-2025 16:58:09 America/Mexico_City] Error en login.php: Contraseña incorrecta.
+[21-Apr-2025 16:58:58 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[21-Apr-2025 16:58:58 America/Mexico_City] Error en login.php: Contraseña incorrecta.
+[21-Apr-2025 16:59:11 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[22-Apr-2025 19:42:00 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[23-Apr-2025 15:26:20 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[24-Apr-2025 14:59:39 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[25-Apr-2025 00:20:33 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[25-Apr-2025 00:20:33 America/Mexico_City] Error en login.php: Usuario no encontrado.
+[25-Apr-2025 16:56:01 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[25-Apr-2025 17:56:57 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[26-Apr-2025 09:40:19 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[26-Apr-2025 20:52:51 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[26-Apr-2025 20:53:46 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[26-Apr-2025 20:53:46 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[26-Apr-2025 20:53:46 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[26-Apr-2025 20:53:46 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[26-Apr-2025 20:53:46 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[26-Apr-2025 20:53:46 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[26-Apr-2025 20:53:46 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[26-Apr-2025 20:53:46 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[26-Apr-2025 20:53:48 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[26-Apr-2025 20:53:48 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 35
+[26-Apr-2025 20:53:48 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[26-Apr-2025 20:53:48 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/conproin/gastos.conproins.com/php/detalles_proyecto.php on line 37
+[07-May-2025 16:17:41 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[07-May-2025 16:17:41 America/Mexico_City] Error en login.php: Usuario no encontrado.
+[07-May-2025 16:18:10 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[07-May-2025 19:38:41 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[15-May-2025 23:29:32 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[20-May-2025 16:21:01 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[20-May-2025 16:21:01 America/Mexico_City] Error en login.php: Usuario no encontrado.
+[20-May-2025 16:21:07 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[20-May-2025 16:21:07 America/Mexico_City] Error en login.php: Usuario no encontrado.
+[20-May-2025 16:21:14 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[21-May-2025 15:15:07 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[21-May-2025 15:15:15 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[21-May-2025 15:15:21 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[21-May-2025 15:15:30 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[23-May-2025 13:39:32 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[23-May-2025 15:49:05 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[23-May-2025 15:53:44 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[23-May-2025 16:29:15 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[23-May-2025 16:29:15 America/Mexico_City] Error en login.php: Contraseña incorrecta.
+[23-May-2025 16:30:26 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[23-May-2025 18:19:32 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[23-May-2025 23:56:14 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[26-May-2025 11:02:30 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[28-May-2025 09:55:02 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[04-Jun-2025 16:19:29 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[06-Jun-2025 04:09:48 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[11-Jun-2025 00:05:44 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[11-Jun-2025 16:04:39 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[11-Jun-2025 16:04:39 America/Mexico_City] Error en login.php: Contraseña incorrecta.
+[11-Jun-2025 16:05:22 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[17-Jun-2025 23:40:07 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
+[18-Jun-2025 14:19:57 America/Mexico_City] PHP Warning:  Undefined variable $idUsuario in /home/conproin/gastos.conproins.com/php/login.php on line 3
