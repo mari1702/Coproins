@@ -1,4 +1,5 @@
 <?php
+require_once "../core/RoleHandler.php";
 
 require_once '../models/Herramienta.php';
 require_once '../models/Marca.php';
@@ -15,6 +16,7 @@ class HerramientaController {
     }
 
     public static function crear() {
+        RoleHandler::OnlyAdmin();
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $descripcion = $_POST['description'];
             $marca = (int)$_POST['brand'];
@@ -120,6 +122,7 @@ class HerramientaController {
     }
 
     public static function editar(){
+        RoleHandler::OnlyAdmin();
         if ($_SERVER['REQUEST_METHOD'] !== 'POST' ) {
             echo "invalid request";
             exit;
@@ -215,7 +218,8 @@ class HerramientaController {
 
 
     public static function borrar(){
-        
+        RoleHandler::OnlyAdmin();
+
         $id = $_POST['id'];
 
         $error = null;

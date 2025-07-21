@@ -1,4 +1,5 @@
 <?php
+require_once "../core/RoleHandler.php";
 
 require_once '../models/Marca.php';
 
@@ -14,6 +15,8 @@ class MarcaController {
     }
 
     public static function crear() {
+        RoleHandler::OnlyAdmin();
+
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $nombre = $_POST['name'];
 
@@ -44,6 +47,8 @@ class MarcaController {
     }
 
     public static function editar() {
+        RoleHandler::OnlyAdmin();
+
         if (!isset($_POST['id']) || !is_numeric($_POST['id'])) {
             echo json_encode([
                 'success' => false,
@@ -94,6 +99,8 @@ class MarcaController {
     }
 
     public static function borrar() {
+        RoleHandler::OnlyAdmin();
+
         if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !isset($_POST['id'])) {
            echo "invalid request";
            exit;

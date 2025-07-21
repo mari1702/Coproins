@@ -1,4 +1,5 @@
 <?php
+require_once "../core/RoleHandler.php";
 
 require_once '../models/Cotizacion.php';
 require_once '../models/Cliente.php';
@@ -15,6 +16,7 @@ class CotizacionController {
     }
 
     public static function crear() {
+        RoleHandler::OnlyAdmin();
         header('Content-Type: application/json');
 
         if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -95,6 +97,7 @@ class CotizacionController {
     }
 
     public static function editar(){
+        RoleHandler::OnlyAdmin(); 
         header('Content-Type: application/json');
 
         if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -206,6 +209,7 @@ class CotizacionController {
     }
 
     public static function borrar(){
+        RoleHandler::OnlyAdmin();
         $id = $_POST['id'];
 
         $error = null;

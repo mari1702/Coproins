@@ -1,4 +1,5 @@
 <?php
+require_once "../core/RoleHandler.php";
 
 require_once '../models/Inventario.php';
 class InventarioController {
@@ -13,6 +14,8 @@ class InventarioController {
     }
 
     public static function crear() {
+        RoleHandler::OnlyAdmin();
+
         header('Content-Type: application/json');
 
         if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -73,6 +76,8 @@ class InventarioController {
     }
 
     public static function editar(){
+        RoleHandler::OnlyAdmin();
+
         header('Content-Type: application/json');
 
         if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -151,6 +156,7 @@ class InventarioController {
     }
 
     public static function borrar(){
+        RoleHandler::OnlyAdmin();
         $id = $_POST['id'];
 
         $error = null;

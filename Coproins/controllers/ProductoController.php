@@ -1,4 +1,5 @@
 <?php
+require_once "../core/RoleHandler.php";
 
 require_once '../models/Producto.php';
 require_once '../models/UnidadMedida.php';
@@ -14,6 +15,8 @@ class ProductoController {
     }
 
     public static function crear() {
+        RoleHandler::OnlyAdmin();
+
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $nombre = "NONAME";
             $descripcion = $_POST['description'];
@@ -127,6 +130,8 @@ class ProductoController {
     }
 
     public static function editar(){
+        RoleHandler::OnlyAdmin();
+
         if ($_SERVER['REQUEST_METHOD'] !== 'POST' ) {
             echo "invalid request";
             exit;
@@ -229,6 +234,7 @@ class ProductoController {
 
 
     public static function borrar(){
+        RoleHandler::OnlyAdmin();
         
         $id = $_POST['id'];
 
