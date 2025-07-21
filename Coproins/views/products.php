@@ -14,7 +14,7 @@ require_once "../controllers/CategoriaController.php";
 require_once "../controllers/UnidadMedidaController.php";
 require_once "../controllers/ProductoController.php";
 
-
+session_start();
 
 
 $categorias = CategoriaController::listar();
