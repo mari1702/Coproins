@@ -2,11 +2,14 @@
 require_once "../components/templates/template.php";
 include "../components/organisms/navbar.php";
 
+require_once "../core/RoleHandler.php";
 require_once '../models/Inventario.php';
 require_once "../controllers/HerramientaController.php";
 require_once "../controllers/DepartamentoController.php";
 require_once "../controllers/MarcaController.php";
 
+session_start();
+RoleHandler::OnlyAdmin();
 
 $herramientas = HerramientaController::listar();
 $departamentos = DepartamentoController::listar();

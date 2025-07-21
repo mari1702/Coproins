@@ -6,12 +6,15 @@ require_once "../components/organisms/modalShowObjects.php";
 
 include "../components/organisms/navbar.php";
 
+require_once "../core/RoleHandler.php";
+
 require_once '../models/Herramienta.php';
 require_once "../controllers/DepartamentoController.php";
 require_once "../controllers/MarcaController.php";
 
+session_start();
 
-
+RoleHandler::OnlyAdmin();
 
 $departamentos = DepartamentoController::listar();
 $marcas = MarcaController::listar();

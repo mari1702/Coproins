@@ -8,6 +8,8 @@ require_once "../controllers/CategoriaController.php";
 require_once "../controllers/CotizacionController.php";
 require_once "../controllers/ClienteController.php";
 
+session_start();
+
 $productos = ProductoController::listar();
 $categorias = CategoriaController::listar();
 $cotizaciones = CotizacionController::listar();

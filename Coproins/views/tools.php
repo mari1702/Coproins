@@ -13,6 +13,8 @@ require_once "../controllers/DepartamentoController.php";
 require_once "../controllers/MarcaController.php";
 require_once "../controllers/HerramientaController.php";
 
+session_start();
+
 $departamentos = DepartamentoController::listar();
 $marcas = MarcaController::listar();
 $herramientas = HerramientaController::listar();

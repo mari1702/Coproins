@@ -8,6 +8,8 @@ require_once "../controllers/DepartamentoController.php";
 require_once "../controllers/MarcaController.php";
 require_once "../controllers/InventarioController.php";
 
+session_start();
+
 $herramientas = HerramientaController::listar();
 $departamentos = DepartamentoController::listar();
 $marcas = MarcaController::listar();

@@ -5,6 +5,8 @@ require_once "../models/Inventario.php";
 $inventario = Inventario::getById($_GET['id']);
 $herramientas = $inventario->getHerramientas();
 
+session_start();
+
 startTemplate("Inventario");
 ?>
 

@@ -6,12 +6,15 @@ include "../components/organisms/navbar.php";
 include "../components/organisms/modalNewObject.php";
 include "../components/organisms/modalShowObjects.php";
 
+require_once "../core/RoleHandler.php";
 
 require_once '../models/Producto.php';
 require_once "../controllers/CategoriaController.php";
 require_once "../controllers/UnidadMedidaController.php";
 
 
+session_start();
+RoleHandler::OnlyAdmin();
 
 
 $categorias = CategoriaController::listar();

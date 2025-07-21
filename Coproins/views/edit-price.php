@@ -2,10 +2,15 @@
 include "../components/templates/template.php";
 include "../components/organisms/navbar.php";
 
+require_once "../core/RoleHandler.php";
 require_once '../models/Cotizacion.php';
 require_once "../controllers/ProductoController.php";
 require_once "../controllers/CategoriaController.php";
 require_once "../controllers/ClienteController.php";
+
+session_start();
+RoleHandler::OnlyAdmin();
+
 
 $productos = ProductoController::listar();
 $categorias = CategoriaController::listar();

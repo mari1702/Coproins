@@ -6,6 +6,7 @@ require_once "../models/Cotizacion.php";
 $cotizacion = Cotizacion::getById($_GET['id']);
 $productos = $cotizacion->getProductos();
 
+session_start();
 
 startTemplate("Cotizacion");
 
