@@ -1,21 +1,17 @@
 <?php
+require_once '../../bd/config.php';
+
 class Database{
-
-// Datos de la base de datos    
-
-    private static $servername = "localhost";
-    private static $username = "";
-    private static $password = "";
-    private static $dbname = ""; 
+  
     private static $connection = null;
     
     public static function getConnection() {
         if (self::$connection === null) {
             try {
                 self::$connection = new PDO(
-                    'mysql:host=' . self::$servername . ';dbname=' . self::$dbname . ';charset=utf8',
-                    self::$username,
-                    self::$password
+                    'mysql:host=' . Config::$DB_HOST . ';dbname=' . Config::$DB_NAME . ';charset=utf8',
+                    Config::$DB_USER,
+                    Config::$DB_PASS
                 );
                 self::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             } catch (PDOException $e) {

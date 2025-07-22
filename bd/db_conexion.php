@@ -1,10 +1,11 @@
 <?php
+require_once 'config.php';
 
 // Configuración de la base de datos
-define('DB_HOST', 'localhost'); 
-define('DB_NAME', ''); 
-define('DB_USER', ''); 
-define('DB_PASS', ''); 
+define('DB_HOST', Config::$DB_HOST); 
+define('DB_NAME', Config::$DB_NAME); 
+define('DB_USER', Config::$DB_USER); 
+define('DB_PASS', Config::$DB_PASS); 
 
 try {
     $pdo = new PDO(
