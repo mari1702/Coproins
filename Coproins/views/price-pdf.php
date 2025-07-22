@@ -1,4 +1,5 @@
 <?php
+require_once "../core/RoleHandler.php";
 require_once "../components/templates/template.php";
 require_once "../models/Cotizacion.php";
 

@@ -1,4 +1,5 @@
 <?php
+require_once "../core/RoleHandler.php";
 require_once "../components/templates/template.php";
 require_once "../models/Inventario.php";
 
@@ -6,7 +7,6 @@ $inventario = Inventario::getById($_GET['id']);
 $herramientas = $inventario->getHerramientas();
 session_start();
 RoleHandler::checkSession();
-
 
 startTemplate("Inventario");
 ?>
