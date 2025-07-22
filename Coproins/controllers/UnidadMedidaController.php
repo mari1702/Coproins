@@ -30,7 +30,7 @@ class UnidadMedidaController{
                 $unidadmedida = new UnidadMedida(null, $nombre);
                 $unidadmedida->save();
 
-                header('Location: ../views/products.php?status=success');
+                header('Location: ../views/products.php?status=success&modal=NewProduct');
                 exit;
 
             } catch (\PDOException $e) {
@@ -84,7 +84,8 @@ class UnidadMedidaController{
 
             echo json_encode([
                 'success' => true,
-                'message' => 'Unidad de medida actualizada exitosamente'
+                'message' => 'Unidad de medida actualizada exitosamente',
+                'modal' => 'NewProduct'
             ]);
             exit;
 
@@ -117,7 +118,7 @@ class UnidadMedidaController{
             }
 
             if ($unidadmedida->delete()) {
-                header('Location: ../views/products.php?status=success');
+                header('Location: ../views/products.php?status=success&modal=NewProduct');
                 exit;
             }
 

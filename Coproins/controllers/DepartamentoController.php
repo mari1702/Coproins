@@ -29,7 +29,7 @@ class DepartamentoController {
                 $departamento = new Departamento(null, $nombre);
                 $departamento->save();
 
-                header('Location: ../views/tools.php?status=success');
+                header('Location: ../views/tools.php?status=success&modal=NewTool');
                 exit;
 
             } catch (\PDOException $e) {
@@ -82,7 +82,8 @@ class DepartamentoController {
 
             echo json_encode([
                 'success' => true,
-                'message' => 'Categoría actualizada exitosamente'
+                'message' => 'Categoría actualizada exitosamente',
+                'modal' => 'NewTool'
             ]);
             exit;
 
@@ -114,7 +115,7 @@ class DepartamentoController {
             }
 
             if ($departamento->delete()) {
-                header('Location: ../views/tools.php?status=success');
+                header('Location: ../views/tools.php?status=success&modal=NewTool');
                 exit;
             }
 

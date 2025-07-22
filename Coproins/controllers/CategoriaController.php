@@ -29,7 +29,7 @@ class CategoriaController {
                 $categoria = new Categoria(null, $nombre);
                 $categoria->save();
 
-                header('Location: ../views/products.php?status=success');
+                header('Location: ../views/products.php?status=success&modal=NewProduct');
                 exit;
 
             } catch (\PDOException $e) {
@@ -50,7 +50,7 @@ class CategoriaController {
         if (!isset($_POST['id']) || !is_numeric($_POST['id'])) {
             echo json_encode([
                 'success' => false,
-                'message' => 'ID de categoría inválido'
+                'message' => 'ID de categoría inválido',
             ]);
             exit;
         }
@@ -61,7 +61,7 @@ class CategoriaController {
         if ($nuevoNombre === '') {
             echo json_encode([
                 'success' => false,
-                'message' => 'El nombre de la categoría no puede estar vacío.'
+                'message' => 'El nombre de la categoría no puede estar vacío.',
             ]);
             exit;
         }
@@ -72,7 +72,7 @@ class CategoriaController {
             if (!$categoria) {
                 echo json_encode([
                     'success' => false,
-                    'message' => 'Categoría no encontrada'
+                    'message' => 'Categoría no encontrada',
                 ]);
                 exit;
             }
@@ -82,7 +82,8 @@ class CategoriaController {
 
             echo json_encode([
                 'success' => true,
-                'message' => 'Categoría actualizada exitosamente'
+                'message' => 'Categoría actualizada exitosamente',
+                'modal' => 'NewProduct'
             ]);
             exit;
 
@@ -114,7 +115,7 @@ class CategoriaController {
             }
 
             if ($categoria->delete()) {
-                header('Location: ../views/products.php?status=success');
+                header('Location: ../views/products.php?status=success&modal=NewProduct');
                 exit;
             }
 

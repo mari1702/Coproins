@@ -8,7 +8,7 @@ function toolForm($action, $brands, $departamentos, $herramienta = null)
     $marcaId = $herramienta && $herramienta->getMarca() ? $herramienta->getMarca()->getId() : null;
     $departamentoId = $herramienta && $herramienta->getDepartamento() ? $herramienta->getDepartamento()->getId() : null;
 ?>
-    <form method="POST" action="../actions/<?= $action ?>" enctype="multipart/form-data">
+    <form method="POST" action="../actions/<?= htmlspecialchars($action) ?>.php" enctype="multipart/form-data">
         <input type="hidden" name="id" value="<?= htmlspecialchars($id) ?>">
 
         <div class="form-group mb-3">
@@ -20,7 +20,7 @@ function toolForm($action, $brands, $departamentos, $herramienta = null)
         <div class="form-group mb-3">
             <label for="brand"><b>Marca</b></label>
             <div class="row">
-                <div class="col-8">
+                <div class="<?= ($action == "herramienta_crear") ?  "col-8 col-lg-10" : "col-12" ?>">
                     <select id="brand" name="brand" class="form-control" required>
                         <option disabled selected value="">Seleccione una marca</option>
                         <?php foreach ($brands as $brand): ?>
@@ -31,6 +31,7 @@ function toolForm($action, $brands, $departamentos, $herramienta = null)
                         <?php endforeach; ?>
                     </select>
                 </div>
+                <?php if($action == "herramienta_crear"): ?>
                 <div class="col-4 col-lg-2 align-content-center">
                     <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
                         data-bs-target="#new_marca">
@@ -42,13 +43,14 @@ function toolForm($action, $brands, $departamentos, $herramienta = null)
                         <i class="fa fa-eye"></i>
                     </button>
                 </div>
+                <?php endif ?>
             </div>
         </div>
 
         <div class="form-group mb-3">
             <label for="department"><b>Departamento</b></label>
             <div class="row">
-                <div class="col-8">
+                <div class="<?= ($action == "herramienta_crear") ?  "col-8 col-lg-10" : "col-12" ?>">
                     <select id="department" name="department" class="form-control" required>
                         <option disabled selected value="">Seleccione un departamento</option>
                         <?php foreach ($departamentos as $departamento): ?>
@@ -59,6 +61,7 @@ function toolForm($action, $brands, $departamentos, $herramienta = null)
                         <?php endforeach; ?>
                     </select>
                 </div>
+                <?php if($action == "herramienta_crear"): ?>
                 <div class="col-4 col-lg-2 align-content-center">
                     <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
                         data-bs-target="#new_departamento">
@@ -70,6 +73,7 @@ function toolForm($action, $brands, $departamentos, $herramienta = null)
                         <i class="fa fa-eye"></i>
                     </button>
                 </div>
+                <?php endif ?>
             </div>
         </div>
 

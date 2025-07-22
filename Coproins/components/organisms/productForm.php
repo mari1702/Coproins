@@ -8,7 +8,7 @@ function productForm($action, $unidades, $categorias, $producto = null)
     $categoriaId = $producto && $producto->getCategoria() ? $producto->getCategoria()->getId() : null;
     $unidadId = $producto && $producto->getUnidadMedida() ? $producto->getUnidadMedida()->getId() : null;
 ?>
-    <form method="POST" action="../actions/<?= htmlspecialchars($action) ?>" enctype="multipart/form-data">
+    <form method="POST" action="../actions/<?= htmlspecialchars($action) ?>.php" enctype="multipart/form-data">
         <input type="hidden" name="id" value="<?= htmlspecialchars($id) ?>">
 
         <div class="form-group mb-3">
@@ -27,7 +27,8 @@ function productForm($action, $unidades, $categorias, $producto = null)
         <div class="form-group mb-3">
             <label for="measurement"><b>Unidad de medida</b></label>
             <div class="row">
-                <div class="col-8">
+
+                <div class="<?= ($action == "producto_crear") ?  "col-8 col-lg-10" : "col-12" ?>">
                     <select id="measurement" name="measurement" class="form-control" required>
                         <option disabled <?= is_null($unidadId) ? 'selected' : '' ?>>Seleccione una unidad</option>
                         <?php foreach ($unidades as $unidad): ?>
@@ -38,7 +39,7 @@ function productForm($action, $unidades, $categorias, $producto = null)
                         <?php endforeach; ?>
                     </select>
                 </div>
-
+                <?php if($action == "producto_crear"): ?>
                 <div class="col-4 col-lg-2 align-content-center">
                     <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
                         data-bs-target="#new_unidad">
@@ -50,13 +51,14 @@ function productForm($action, $unidades, $categorias, $producto = null)
                         <i class="fa fa-eye"></i>
                     </button>
                 </div>
+                <?php endif ?>
             </div>
         </div>
 
         <div class="form-group mb-3">
             <label for="category"><b>Categoría</b></label>
             <div class="row">
-                <div class="col-8">
+                <div class="<?= ($action == "producto_crear") ?  "col-8 col-lg-10" : "col-12" ?>">
                     <select id="category" name="category" class="form-control" required>
                         <option disabled <?= is_null($categoriaId) ? 'selected' : '' ?>>Seleccione una categoría</option>
                         <?php foreach ($categorias as $categoria): ?>
@@ -67,6 +69,7 @@ function productForm($action, $unidades, $categorias, $producto = null)
                         <?php endforeach; ?>
                     </select>
                 </div>
+                <?php if($action == "producto_crear"): ?>
                 <div class="col-4 col-lg-2 align-content-center">
                     <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
                         data-bs-target="#new_categoria">
@@ -78,6 +81,7 @@ function productForm($action, $unidades, $categorias, $producto = null)
                         <i class="fa fa-eye"></i>
                     </button>
                 </div>
+                <?php endif ?>
             </div>
         </div>
 

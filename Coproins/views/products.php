@@ -15,6 +15,7 @@ require_once "../controllers/UnidadMedidaController.php";
 require_once "../controllers/ProductoController.php";
 
 session_start();
+RoleHandler::checkSession();
 
 
 $categorias = CategoriaController::listar();
@@ -37,7 +38,7 @@ startTemplate("Productos");
     <?php
     alerts();
     startModal("NewProduct", "Registrar Producto");
-    productForm("producto_crear.php", $unidades, $categorias);
+    productForm("producto_crear", $unidades, $categorias);
     endModal();
     ?>
 
@@ -132,10 +133,17 @@ startTemplate("Productos");
                                         ?>
 
                                         <!-- Editar -->
-                                        <a href="edit-product.php?id=<?= $producto->getId(); ?>" class="btn btn-primary btn-sm" title="Editar"
-                                            aria-label="Editar">
+                                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#EditProduct<?= $producto->getId(); ?>">
                                             <i class="fas fa-edit"></i>
-                                        </a>
+                                        </button>
+
+                                        <?php
+                                        startModal("EditProduct".$producto->getId(), "Editar Producto");
+                                        productForm("producto_editar", $unidades, $categorias, $producto);
+                                        endModal();
+                                        ?>
+
 
                                         <!-- Eliminar -->
                                         <form method="POST" action="../actions/producto_borrar.php" class="d-inline">
@@ -192,7 +200,8 @@ startTemplate("Productos");
 
 
     document.addEventListener('DOMContentLoaded', function() {
-        // Elementos del DOM
+        // Elementos del DOM 
+
         const searchInput = document.getElementById('searchInput');
         const categoryFilter = document.getElementById('categoryFilter');
         const clearSearch = document.getElementById('clearSearch');
@@ -231,8 +240,18 @@ startTemplate("Productos");
             filterProducts();
             searchInput.focus();
         });
-
+        
         formatPrices();
+
+        const url = new URL(window.location.href);
+        const params = new URLSearchParams(url.search);
+        const modal = params.get('modal');
+
+        if (modal) {
+            var myModal = new bootstrap.Modal(createProduct = document.getElementById(modal));
+            myModal.show();
+        }
+           
     });
 </script>
 

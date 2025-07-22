@@ -25,8 +25,7 @@ function saveEdit(button) {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            labelName.textContent = nuevoNombre;
-            alert(data.message);
+            window.location.href = window.location.pathname + "?modal=" + data.modal;
         } else {
             throw new Error(data.message);
         }

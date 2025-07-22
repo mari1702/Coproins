@@ -30,7 +30,7 @@ class MarcaController {
                 $marca = new Marca(null, $nombre);
                 $marca->save();
 
-                header('Location: ../views/tools.php?status=success');
+                header('Location: ../views/tools.php?status=success&modal=NewTool');
                 exit;
 
             } catch (\PDOException $e) {
@@ -84,7 +84,8 @@ class MarcaController {
 
             echo json_encode([
                 'success' => true,
-                'message' => 'Categoría actualizada exitosamente'
+                'message' => 'Categoría actualizada exitosamente',
+                'modal' => 'NewTool'
             ]);
             exit;
 
@@ -117,7 +118,7 @@ class MarcaController {
             }
 
             if ($marca->delete()) {
-                header('Location: ../views/tools.php?status=success');
+                header('Location: ../views/tools.php?status=success&modal=NewTool');
                 exit;
             }
 
