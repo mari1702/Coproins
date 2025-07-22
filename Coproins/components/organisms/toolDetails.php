@@ -5,10 +5,13 @@ function toolDetails($herramienta)
     <div class="row">
 
         <?php if ($herramienta->getImgRuta()): ?>
-            <div class="col-4 mb-3">
-                <img src="../<?= $herramienta->getImgRuta(); ?>"
-                    class="img-fluid rounded" alt="Producto 1">
+            
+            <div class="col-4 mb-3" >
+                <div style="position: relative; width: 100%; padding-bottom: 100%;">
+                    <img src="../<?= $herramienta->getImgRuta(); ?>" class="img-fluid rounded position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover;" alt="imagen">
+                </div>
             </div>
+            
         <?php endif ?>
 
         <div class="<?= ($herramienta->getImgRuta()) ? 'col-8' : 'col-12' ?>">

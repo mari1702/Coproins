@@ -5,9 +5,10 @@ function productDetails($producto)
     <div class="row">
 
         <?php if ($producto->getImgRuta()): ?>
-            <div class="col-4 mb-3">
-                <img src="../<?= $producto->getImgRuta(); ?>"
-                    class="img-fluid rounded" alt="imagen">
+            <div class="col-4 mb-3" >
+                <div style="position: relative; width: 100%; padding-bottom: 100%;">
+                    <img src="../<?= $producto->getImgRuta(); ?>" class="img-fluid rounded position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover;" alt="imagen">
+                </div>
             </div>
         <?php endif ?>
 

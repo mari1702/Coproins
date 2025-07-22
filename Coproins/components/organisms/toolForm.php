@@ -79,12 +79,18 @@ function toolForm($action, $brands, $departamentos, $herramienta = null)
 
         <div class="form-group mb-3">
             <label for="image"><b>Imagen</b></label>
-            <input type="file" class="form-control-file" id="image" name="image" accept="image/*">
-            <?php if ($imgRuta): ?>
-                <div class="mt-2">
-                    <img src="../<?= htmlspecialchars($imgRuta) ?>" alt="Imagen actual" style="max-height: 150px;">
+            <div class="row">
+                <?php if ($imgRuta): ?>
+                    <div class="col-2">
+                        <div style="position: relative; width: 100%; padding-bottom: 100%;">
+                            <img src="../<?= htmlspecialchars($imgRuta) ?>" class="img-fluid rounded position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover;" alt="imagen">
+                        </div>
+                    </div>
+                <?php endif; ?>
+                <div class="col-10">
+                    <input type="file" class="form-control-file" id="image" name="image" accept="image/*">
                 </div>
-            <?php endif; ?>
+            </div>
         </div>
 
         <button type="submit" class="btn btn-primary col-12">Guardar</button>
