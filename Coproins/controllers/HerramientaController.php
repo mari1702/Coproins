@@ -38,7 +38,7 @@ class HerramientaController {
     
             // Manejo de la imagen
             if (!empty($_FILES['image']['name'])) {
-                $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/uploads/tools/';
+                $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/Coproins/uploads/tools/';
                 $allowedTypes = ['image/jpeg', 'image/png', 'image/webp'];
                 $maxSize = 2 * 1024 * 1024; // 2MB
     
@@ -145,7 +145,7 @@ class HerramientaController {
 
         // Manejo de la imagen
         if (!empty($_FILES['image']['name'])) {
-            $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/uploads/tools/';
+            $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/Coproins/uploads/tools/';
             $allowedTypes = ['image/jpeg', 'image/png', 'image/webp'];
             $maxSize = 2 * 1024 * 1024; // 2MB
 

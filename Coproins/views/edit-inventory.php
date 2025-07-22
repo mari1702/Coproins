@@ -159,7 +159,7 @@ startTemplate("Editar Inventario");
         tool = {
             id: "<?= json_encode($herramienta['herramienta']->getId()) ?>",
             description: <?= json_encode($herramienta['herramienta']->getDescripcion()) ?>,
-            img: <?= json_encode($herramienta['herramienta']->getImgRuta()) ?>,
+            img: "../"+<?= json_encode($herramienta['herramienta']->getImgRuta()) ?>,
             brand: <?= json_encode($herramienta['herramienta']->getMarca()->getNombre()) ?>,
             quantity: <?= json_encode($herramienta['cantidad']) ?>
         }
@@ -221,7 +221,8 @@ startTemplate("Editar Inventario");
                 const toolCard = this.closest('#tool-item');
                 const toolId = toolCard.querySelector('#id').textContent.trim();
                 const toolDescription = toolCard.querySelector('#description').textContent.trim();
-                const toolImg = toolCard.querySelector('#img') ? toolCard.querySelector('#img').src : null;
+                const imgElement = toolCard.querySelector('#img');
+                const toolImg = imgElement ? imgElement.getAttribute('src') : null;
                 const toolBrand = toolCard.querySelector('#brand-name').textContent;
 
                 // Agregar toolo al carrito
@@ -261,7 +262,7 @@ startTemplate("Editar Inventario");
                                     ${item.img == null ? " " : `    
                                     <div class="col-2 col-sm-2 col-md-2 col-lg-2">
                                         <div style="position: relative; width: 100%; padding-bottom: 100%;">
-                                            <img src="../${item.img}" class="img-fluid rounded position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover;" alt="${item.description}">
+                                            <img src="${item.img}" class="img-fluid rounded position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover;" alt="${item.description}">
                                         </div>
                                     </div>
                                     `}

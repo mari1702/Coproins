@@ -152,7 +152,7 @@ startTemplate("Editar Cotización");
             id: "<?= json_encode($producto['producto']->getId()) ?>",
             description: <?= json_encode($producto['producto']->getDescripcion()) ?>,
             price: "<?= json_encode($producto['producto']->getPrecio()) ?>",
-            img: <?= json_encode($producto['producto']->getImgRuta()) ?>,
+            img: "../"+<?= json_encode($producto['producto']->getImgRuta()) ?>,
             quantity: <?= json_encode($producto['cantidad']) ?>
         }
         cart.push(product);
@@ -223,10 +223,11 @@ startTemplate("Editar Cotización");
                 const productCard = this.closest('#product-item');
                 const productId = productCard.querySelector('#id').textContent.trim();
                 const productDescription = productCard.querySelector('#description').textContent.trim();
-                const productPrice = productCard.querySelector('#price').textContent.trim();
-                const productImg = productCard.querySelector('#img') ? productCard.querySelector('#img').src : null;
+                const productPrice = productCard.querySelector('#price').textContent.trim();                
+                const imgElement = productCard.querySelector('#img');
+                const productImg = imgElement ? imgElement.getAttribute('src') : null;
 
-
+                console.log(productImg);
                 // Agregar producto al carrito
                 addToCart({
                     id: productId,

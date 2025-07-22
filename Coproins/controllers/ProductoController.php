@@ -44,7 +44,7 @@ class ProductoController {
     
             // Manejo de la imagen
             if (!empty($_FILES['image']['name'])) {
-                $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/uploads/products/';
+                $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/Coproins/uploads/products/';
                 $allowedTypes = ['image/jpeg', 'image/png', 'image/webp'];
                 $maxSize = 2 * 1024 * 1024; // 2MB
     
@@ -159,7 +159,7 @@ class ProductoController {
 
         // Manejo de la imagen
         if (!empty($_FILES['image']['name'])) {
-            $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/uploads/products/';
+            $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/Coproins/uploads/products/';
             $allowedTypes = ['image/jpeg', 'image/png', 'image/webp'];
             $maxSize = 2 * 1024 * 1024; // 2MB
 
