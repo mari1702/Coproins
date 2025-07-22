@@ -9,6 +9,8 @@ require_once "../controllers/CotizacionController.php";
 require_once "../controllers/ClienteController.php";
 
 session_start();
+RoleHandler::checkSession();
+
 
 $productos = ProductoController::listar();
 $categorias = CategoriaController::listar();
@@ -140,7 +142,7 @@ startTemplate("Cotizaciones");
                     </thead>
                     <tbody>
                         <?php foreach ($cotizaciones as $cotizacion): ?>
-                            <tr data-client="<?= $cotizacion->getCliente()->getCliente(); ?>">
+                            <tr data-client="<?= $cotizacion->getCliente()->getId(); ?>">
                                 <th scope="row"><?= $cotizacion->getId() ?></th>
                                 <td><?= $cotizacion->getNombreProyecto() ?></td>
                                 <td><?= $cotizacion->getFecha() ?></td>

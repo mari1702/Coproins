@@ -14,6 +14,7 @@ require_once "../controllers/MarcaController.php";
 require_once "../controllers/HerramientaController.php";
 
 session_start();
+RoleHandler::checkSession();
 
 $departamentos = DepartamentoController::listar();
 $marcas = MarcaController::listar();
@@ -35,7 +36,7 @@ startTemplate("Herramientas")
     <?php
     alerts();
     startModal("NewTool", "Registrar herramienta");
-    toolForm("herramienta_crear.php", $marcas, $departamentos);
+    toolForm("herramienta_crear", $marcas, $departamentos);
     endModal();
     ?>
 </section>
@@ -128,10 +129,16 @@ startTemplate("Herramientas")
                                         ?>
 
                                         <!-- Editar -->
-                                        <a href="edit-tool.php?id=<?= $herramienta->getId(); ?>" class="btn btn-primary btn-sm" title="Editar"
-                                            aria-label="Editar">
+                                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#EditTool<?= $herramienta->getId(); ?>">
                                             <i class="fas fa-edit"></i>
-                                        </a>
+                                        </button>
+
+                                        <?php
+                                        startModal("EditTool".$herramienta->getId(), "Editar Herramienta");
+                                        toolForm("herramienta_editar",$marcas, $departamentos, $herramienta);
+                                        endModal();
+                                        ?>
 
                                         <!-- Eliminar -->
                                         <form method="POST" action="../actions/herramienta_borrar.php" class="d-inline">
@@ -214,6 +221,14 @@ startTemplate("Herramientas")
             searchInput.focus();
         });
 
+        const url = new URL(window.location.href);
+        const params = new URLSearchParams(url.search);
+        const modal = params.get('modal');
+
+        if (modal) {
+            var myModal = new bootstrap.Modal(createProduct = document.getElementById(modal));
+            myModal.show();
+        }
     });
 </script>
 

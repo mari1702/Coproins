@@ -4,8 +4,9 @@ require_once "../models/Inventario.php";
 
 $inventario = Inventario::getById($_GET['id']);
 $herramientas = $inventario->getHerramientas();
-
 session_start();
+RoleHandler::checkSession();
+
 
 startTemplate("Inventario");
 ?>

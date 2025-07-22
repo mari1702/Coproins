@@ -8,8 +8,8 @@ require_once "../controllers/HerramientaController.php";
 require_once "../controllers/DepartamentoController.php";
 require_once "../controllers/MarcaController.php";
 
-session_start();
 RoleHandler::OnlyAdmin();
+RoleHandler::checkSession();
 
 $herramientas = HerramientaController::listar();
 $departamentos = DepartamentoController::listar();

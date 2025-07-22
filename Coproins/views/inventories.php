@@ -9,6 +9,8 @@ require_once "../controllers/MarcaController.php";
 require_once "../controllers/InventarioController.php";
 
 session_start();
+RoleHandler::checkSession();
+
 
 $herramientas = HerramientaController::listar();
 $departamentos = DepartamentoController::listar();

@@ -8,8 +8,8 @@ require_once "../controllers/ProductoController.php";
 require_once "../controllers/CategoriaController.php";
 require_once "../controllers/ClienteController.php";
 
-session_start();
 RoleHandler::OnlyAdmin();
+RoleHandler::checkSession();
 
 
 $productos = ProductoController::listar();

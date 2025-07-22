@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once "../components/templates/template.php";
 require_once "../models/Cotizacion.php";
 
@@ -7,6 +6,8 @@ $cotizacion = Cotizacion::getById($_GET['id']);
 $productos = $cotizacion->getProductos();
 
 session_start();
+RoleHandler::checkSession();
+
 
 startTemplate("Cotizacion");
 
