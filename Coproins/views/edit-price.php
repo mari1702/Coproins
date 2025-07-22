@@ -275,11 +275,13 @@ startTemplate("Editar Cotización");
                                     </div>
                                     `
                                     }
+
                                     <div class=" ${item.img == null ? 'col-12 col-sm-6 col-md-4 col-lg-4' : 'col-10 col-sm-4 col-md-2 col-lg-4'}">
                                         <h6 class="card-title mb-1 fw-bold text-truncate">${item.description}</h6>
                                         <p class="card-text text-muted small mb-1">${item.description}</p>
                                         <span class="badge bg-light text-dark">ID: ${item.id}</span>
                                     </div>
+
                                     <div class="col-md-2 col-4">
                                         <div class="input-group input-group-sm">
                                             <input type="number" class="form-control text-center quantity-input" 
@@ -288,10 +290,12 @@ startTemplate("Editar Cotización");
                                                 onchange="updateQuantity(this)">
                                         </div>
                                     </div>
+
                                     <div class="col-md-2 col-4 text-center">
                                         <p class="mb-0 fw-bold"><span class="price-format total-price" data-unit-price="${item.price}">${totalPrice}</span> 
                                         <span class="text-muted small d-block"><span class="price-format unit-price">${item.price}</span> c/u</span></p>
                                     </div>
+
                                     <div class="col-md-2 col-4 text-end">
                                         <button class="btn btn-outline-danger btn-sm" 
                                                 onclick="removeFromCart('${item.id}')"
@@ -300,6 +304,7 @@ startTemplate("Editar Cotización");
                                             <i class="fas fa-trash-alt"></i>
                                         </button>
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>
